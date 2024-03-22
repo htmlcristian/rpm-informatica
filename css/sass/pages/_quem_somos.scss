@@ -1,0 +1,362 @@
+.s-hero-quem-somos {
+
+    background-image: url('../../../imgs/quem_somos/bg-quem-somos.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    max-height: 73.6rem;
+    @include padding-bottom(34.8rem);
+
+    .container-pg {
+
+        h1 {
+
+            @include padding-top(34.6rem);
+            @include font-size(4rem);
+            @include rfs(4rem, line-height);
+            @include rfs(-0.28rem, letter-spacing);
+            text-align: center;
+            color: var(--White);
+            font-family: "Rubik Mono One";
+
+        }
+
+    }
+
+}
+
+.s-solucoes-quem-somos {
+
+    background-color: var(--Blue-Light);
+    @include padding(8.8rem 0 11.3rem 0);
+    overflow: hidden;
+
+    .container-pg {
+
+        h2 {
+
+            color: var(--Blue-Primary);
+            font-family: "Rubik Mono One";
+            @include font-size(3.2rem);
+            @include rfs(120%, line-height);
+            @include rfs(-0.064rem, letter-spacing);
+            @include margin-bottom(4rem);
+
+        }
+
+        .total-div-solucoes {
+
+            display: flex;
+            justify-content: space-between;
+            @include margin-bottom(7.1rem);
+
+            .text-left-solucoes {
+
+                span {
+
+                    width: 100%;
+                    max-width: 42.4rem;
+                    color: var(--Blue-Primary);
+                    @include font-size(2rem);
+                    font-weight: 500;
+                    line-height: 140%;
+
+                }
+
+
+            }
+
+            .text-right-solucoes {
+
+                width: 100%;
+                max-width: 56.5rem;
+
+            }
+
+        }
+
+        .capacitacao-quem-somos {
+            
+            .box-text-image-solucoes {
+
+                width: 100%;
+                max-width: 111rem;
+                max-height: 61.9rem;
+                position: relative;
+                @include margin-bottom(8rem);
+
+                img {
+
+                    position: relative;
+                    left: 28.5rem;
+                    z-index: 1;
+
+                }
+
+                .text-capacitacao {
+
+                    z-index: 2;
+                    top: 28.1rem;
+                    position: absolute;
+                    max-width: 44.5rem;
+                    padding: 24px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 24px;
+                    border-radius: 4px;
+                    background: var(--White);
+                    box-shadow: 0px 0px 40px 0px rgba(31, 68, 122, 0.08);
+
+                    h3 {
+
+                        @include font-size(32px);
+                        @include rfs(120%, line-height);
+                        @include rfs(-0.064rem, letter-spacing);
+                        color: var(--Blue-Primary);
+                        font-family: "Rubik Mono One";
+
+                    }
+
+                    p {
+
+                        color: var(--Dark-Blue);
+                        font-size: 18px;
+                        line-height: 140%; /* 25.2px */
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        .estrutura-negocio {
+
+            @include margin(8rem 0 8rem 0);
+
+            .swiper.list-estrutura {
+
+                .swiper-wrapper {
+    
+                    // display: flex;
+                    // gap: 3rem;
+        
+                    .swiper-slide {
+        
+                        @include padding(2.4rem);
+                        @include rfs(1.6rem, gap);
+                        @include rfs(0.4rem, border-radius);
+                        min-height: 47rem;
+                        max-width: 35rem;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        background: var(--White);
+                        box-shadow: 0px 0px 40px 0px rgba(31, 68, 122, 0.08);
+
+                        h3 {
+
+                            color: var(--Blue-Primary);
+                            font-family: "Rubik Mono One";
+                            @include font-size(2.4rem);
+                            @include rfs(120%, line-height);
+                            @include rfs(-0.024rem, letter-spacing);
+
+                        }
+
+                        p {
+
+                            color: var(--Dark-Blue);
+                            @include font-size(1.6rem);
+                            @include rfs(140%, line-height);
+
+
+                        }
+        
+                    }
+        
+                }
+    
+            }
+
+            .swiper-pagination-estrutura-negocios {
+
+                width: 100%;
+                max-width: 6rem;
+                @include margin(2rem 0 2rem auto);
+
+                .swiper-pagination-bullet {
+
+                    border-radius: 1.2rem;
+                    opacity: 0.3;
+                    background: var(--Green-Tertiary);
+                    transition: all .3s;
+    
+                    &-active {
+    
+                        width: 1.723rem;
+                        opacity: 1;
+                        border-radius: 1.2rem;
+                        background: var(--Green-Tertiary);
+    
+                    }
+    
+                }
+
+            }
+
+        }
+
+        .revendedor-slide {
+
+            .swiper.slide-marcas {
+
+                .swiper-wrapper {
+
+                    display: flex;
+                    align-items: center;
+
+                }
+
+            }
+
+            .pagination-marcas {
+
+                width: 100%;
+                max-width: 6rem;
+                @include margin(0 0 2rem auto);
+
+                .swiper-pagination-bullet {
+
+                    border-radius: 1.2rem;
+                    opacity: 0.3;
+                    background: var(--Green-Tertiary);
+                    transition: all .3s;
+    
+                    &-active {
+    
+                        width: 1.723rem;
+                        opacity: 1;
+                        border-radius: 1.2rem;
+                        background: var(--Green-Tertiary);
+    
+                    }
+    
+                }
+
+            }
+
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+
+    .s-hero-quem-somos {
+
+        max-height: 79.1rem;
+        padding-top: 58.8rem;
+        padding-bottom: 14.6rem;
+
+        .container-pg {
+
+            h1 {
+
+                @include padding-top(7.5rem);
+
+            }
+
+        }
+
+    }
+
+    .s-solucoes-quem-somos {
+
+        .container-pg {
+
+            h2 {
+
+                font-size: 2.2rem;
+                text-align: center;
+
+            }
+
+            .total-div-solucoes {
+
+                display: block;
+
+                .text-left-solucoes {
+
+                    @include margin(0 auto 3.2rem auto);
+
+                    h4 {
+
+                        text-align: center;
+                        font-size: 13px;
+
+                    }
+
+                    span {
+
+                        text-align: center;
+                        font-size: 14px;
+
+                    }
+
+                }
+
+            }
+
+
+            .capacitacao-quem-somos {
+
+                .box-text-image-solucoes {
+
+                    img {
+
+                        left: 0;
+                        position: relative;
+    
+                    }   
+
+                }
+            }
+
+
+            .estrutura-negocio {
+
+                margin-top: 29.5rem;
+
+                h2 {
+
+                    @include margin-bottom(2.4rem);
+
+                }
+
+                .swiper.list-estrutura {
+
+                    .swiper-wrapper {
+        
+                        // display: flex;
+                        // gap: 3rem;
+            
+                        .swiper-slide {
+                            
+                            min-height: 49.7rem;
+            
+                        }
+            
+                    }
+        
+                }
+
+            }
+        }
+
+    }
+
+}

@@ -1,0 +1,42 @@
+.btn-primary {
+
+    @include padding(1.2rem 2.4rem);
+    @include font-size(1.6rem);
+    @include rfs(140%, line-height);
+    @include rfs(500, font-weight);
+    border-radius: 0.4rem;
+    border: 1px solid var(--Green-Tertiary);
+    background: var(--White);
+    color: var(--Dark-Blue);
+    text-transform: uppercase;
+    transition: background-color .3s ease;
+}
+
+.btn-primary:hover {
+
+    background-color: #ededed;
+
+}
+
+.btn-secondary {
+    
+    @include padding(1.2rem 2.4rem);
+    @include font-size(1.6rem);
+    @include rfs(140%, line-height);
+    @include rfs(700, font-weight);
+    color: var(--Dark-Blue);
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    border-radius: 0.4rem;
+    background: var(--Green-Tertiary);
+    box-shadow: 0px 2px 8px 0px rgba(104, 125, 36, 0.24);
+    transition: background-color .3s ease;
+}
+
+.btn-secondary:hover {
+
+    background-color: #8faa36;
+
+}

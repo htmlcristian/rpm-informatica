@@ -1,0 +1,91 @@
+.navbar-toggler {
+
+    border: 0;
+
+}
+.navbar-toggler span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    transition: all 0.35s ease-out;
+    transform-origin: center left;
+
+  }
+  .top-bar,
+  .bottom-bar {
+      background-color: var(--Dark-Blue);
+  }
+
+  .middle-bar {
+      background-color: var(--Green-Tertiary);
+  }
+  
+  .navbar-toggler span:nth-child(1) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  
+  .navbar-toggler span:nth-child(2) {
+    opacity: 1;
+  }
+  
+  .navbar-toggler span:nth-child(3) {
+    transform: translate(0%, 0%) rotate(0deg);
+  }
+  
+  .navbar-toggler span:nth-child(1) {
+    margin-top: 0.3em;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(1) {
+    transform: translate(15%, -33%) rotate(45deg);
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .navbar-toggler:not(.collapsed) span:nth-child(3) {
+    background-color: var(--Green-Tertiary);
+    transform: translate(15%, 33%) rotate(-45deg);
+  }
+
+  .sm-contact .text-sm {
+
+    font-size: 1.4rem;
+
+  }
+
+  .scrolled-down{
+    transform:translateY(100%); transition: all 0.3s ease-in-out;
+  }
+  .scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+  }
+
+  .down-arrow {
+    position: absolute;
+    top: calc(100vh - 100px);
+    left: calc(50% - 14px);
+    animation: jumpInfinite 1.5s infinite;
+  }
+
+  @media (min-width: 490px) and (max-width: 1199px) {
+
+    .down-arrow {
+      position: absolute;
+      top: 100vh;
+      left: calc(50% - 14px);
+      animation: jumpInfinite 1.5s infinite;
+  }
+
+}
+
+
+
+  
+  

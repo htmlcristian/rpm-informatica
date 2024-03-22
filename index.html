@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPM Informática</title>
+    <!-- Favicon e Lib de Animacao de Página -->
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- CSS Minificado -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+<body>
+
+    <header class="fixed-top" >
+      <div class="container container-fluid-lg">
+          <div class="contact-section desktop1 d-none d-lg-block minimizar">
+              <div class="desktop-contact d-md-flex align-baseline justify-content-end">
+                  <div class="contact-item">
+                      <img src="./imgs/icon-calling-white.svg" alt="">
+                      <a class="sm-contact text-sm" href="tel:+55213040-3773">21 3040-3773</a>
+                  </div>
+                  <div class="contact-item">
+                      <img src="./imgs/icon-whatsapp-adress.svg" alt="">
+                      <a class="sm-contact text-sm" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832 </a>
+                  </div>
+                  <div class="contact-item">
+                      <img src="./imgs/icon-message-white.svg" alt="">
+                      <a class="sm-contact text-sm" href="vendas@rpminformatica.com">vendas@rpminformatica.com</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <nav class="navbar navbar-expand-lg">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img class="img-fluid" src="./imgs/logo-rpm-informatica-header.svg" alt="Logo RPM-Informática">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-bar top-bar"></span>
+              <span class="icon-bar middle-bar"></span>
+              <span class="icon-bar bottom-bar"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./html/quem_somos.html">QUEM SOMOS</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle custom-arrow" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">SERVIÇOS</a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="./html/acronis.html">ACRONIS</a></li>
+                      <li><a class="dropdown-item" href="./html/alarme.html">ALARME</a></li>
+                      <li><a class="dropdown-item" href="./html/pabx.html">PABX</a></li>
+                      <li><a class="dropdown-item" href="./html/cftv.html">CFTV</a></li>
+                      <li><a class="dropdown-item" href="./html/fortinet.html">FORTINET</a></li>
+                      <li><a class="dropdown-item" href="./html/sharepoint.html">SHAREPOINT</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">SUPORTE EM TI</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    PROMOÇÕES
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">HD SSD</a></li>
+                    <li><a class="dropdown-item" href="#">HD SSD</a></li>
+                    <li><a class="dropdown-item" href="#">HD SSD</a></li>
+                    <li><a class="dropdown-item" href="#">HD SSD</a></li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#">CONTATO</a>
+                </li>
+
+              </ul>
+
+              <div class="row endereco-btn-mobile mt-10">
+                  <div class="col d-flex justify-content-center align-items-center">
+                    <button class="btn-primary">Conheça Nossa Loja</button>
+                  </div>
+
+                <div class="contact-section mobile1 d-lg-none mt-3">
+                      <div class="row">
+                          
+                              <div class="col-6 contact-item d-flex justify-content-end align-items-center">
+                                  <img src="./imgs/Calling.svg" alt="">
+                                  <a class="sm-contact text-sm" href="tel:+55213040-3773">21 3040-3773</a>
+                              </div>
+                              <div class="col-6 contact-item d-flex justify-content-start align-items-center">
+                                  <img src="./imgs/icon-whatsapp.svg" alt="">
+                                  <a class="sm-contact text-sm" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
+                              </div>
+                          
+                          <div class="row">
+                              <div class="contact-item d-flex justify-content-center align-items-center mt-2">
+                                  <img src="./imgs/icon-message-header-mobile.svg" alt="">
+                                  <a class="sm-contact text-sm" href="vendas@rpminformatica.com">vendas@rpminformatica.com</a>
+                              </div>
+                          </div>
+                      </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </nav>
+    </header>
+
+    <section class="s-hero">
+        <div class="container-pg">
+            <div class="main-text">
+                <h1 class="h1-sm">RPM Informática</h1>
+                <h2 class="h2-sm">Sua visão, nossas soluções!</h2>
+                <p class="p-sm">
+                    Consolidada no mercado carioca, mais conta com clientes fora do estado com 
+                    o atendimento remoto para implementação e instalação de software além de criação de redes seguras de intranet.
+                </p>
+                <p class="p-sm hidden">
+                    Somos também revenda autorizada de todos os serviços que oferecemos.
+                </p>
+            </div>
+            <div class="down-arrow d-none d-md-block">
+              <img src="./imgs/scroll-down.svg" alt="">
+            </div>     
+        </div>
+    </section>
+
+    <section class="s-servicos">
+      <div class="container-pg">
+        <div class="titulo-servicos-home">
+          <h2 class="mb-1">Serviços</h2>
+        </div>
+        <div class="servicos-list-with-links">  
+          <div class="text-projetamos">
+            <p>
+              Projetamos para os mais diversos ambientes de rede,
+              fornecendo os melhores equipamentos e materiais para a montagem de uma infraestrutura segura e estável.
+            </p> 
+          </div>
+          <div class="div-total-cards">
+            <div class="row gx-3">
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <a href="./html/acronis.html" target="_blank" rel="noopener noreferrer">
+                  <div class="card-servicos">
+                      <div class="image-card">
+                          <img src="./imgs/icon-acronis.svg" alt="">
+                      </div>
+                      <div class="info-card">
+                          <h4>Acronis</h4>
+                          <p>Backup em nuvem aprimorado com proteção de ataques cibernéticos.</p>
+                      </div>
+                  </div> 
+               </a>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <a href="./html/alarme.html" target="_blank" rel="noopener noreferrer">
+                  <div class="card-servicos">
+                      <div class="image-card">
+                          <img src="./imgs/icon-alarme.svg" alt="">
+                      </div>
+                      <div class="info-card">
+                          <h4>Alarme</h4>
+                          <p>Instalação de sistema de alarme Intelbrás monitorado pelo celular.</p>
+                      </div>
+                  </div> 
+                </a>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <div class="card-servicos">
+                      <div class="image-card">
+                          <img src="./imgs/icon-cftv.svg" alt="">
+                      </div>
+                      <div class="info-card">
+                          <h4>CFTV</h4>
+                          <p>Instalação de CFTV <br> ( Instalação de Câmeras de segurança ), com fornecimento de equipamentos, mão de obra especializada e configuração do sistema.</p>
+                      </div>
+                  </div> 
+                </a>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <a href="./pages/fortinet.html" target="_blank" rel="noopener noreferrer">
+                  <div class="card-servicos">
+                      <div class="image-card">
+                          <img src="./imgs/icon-fotinet.svg" alt="">
+                      </div>
+                      <div class="info-card">
+                          <h4>Fortinet</h4>
+                          <p>Instalação e configuração de soluções da Fortinet com fornecimento dos equipamentos.</p>
+                      </div>
+                  </div> 
+                </a>              
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <a href="./pages/sharepoint.html" target="_blank" rel="noopener noreferrer">
+                  <div class="card-servicos">
+                      <div class="image-card">
+                          <img src="./imgs/icon-microsoft-sharepoint.svg" alt="">
+                      </div>
+                      <div class="info-card">
+                          <h4>Sharepoint</h4>
+                          <p>Com o Microsoft Sharepoint permite às empresas compartilhar, gerenciar e acessar informações de maneira eficiente.</p>
+                      </div>
+                  </div> 
+              </a>
+              </div>
+              <div class="col-xs-12 col-md-6 col-lg-4">
+                <a href="./pages/suporte.html" target="_blank" rel="noopener noreferrer">
+                  <div class="card-servicos">
+                      <div class="image-card">
+                          <img src="./imgs/icon-suporte.svg" alt="">
+                      </div>
+                      <div class="info-card">
+                          <h4>Suporte</h4>
+                          <p>Oferecemos desde serviço de redes de computadores, passando por segurança da informação e suporte técnico.</p>
+                      </div>
+                  </div> 
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="s-rpm-motivos">
+      <div class="container-pg">
+          <h2>Porque escolher a RPM</h2>
+          <div class="porque-rpm">
+              <ul class="row">
+                  <li class="col-xs-12 col-md-4 col-lg-2">
+                      <div class="estatisticas-rpm">
+                        <div class="icon-porque">
+                          <img src="./imgs/home/icon-users.svg" alt="">
+                        </div>
+                        <h3>+1.200</h3>
+                        <p>Clientes atendidos</p>
+                      </div>
+                  </li>
+                  <li class="col-xs-12 col-md-4 col-lg-2">
+                    <div class="estatisticas-rpm">
+                      <div class="icon-porque">
+                        <img src="./imgs/home/icon-note.svg" alt="">
+                      </div>
+                      <h3>+65</h3>
+                      <p>Contratos de manutenção ativos</p>
+                    </div>
+                  </li>
+                  <li class="col-xs-12 col-md-4 col-lg-2">
+                    <div class="estatisticas-rpm">
+                      <div class="icon-porque">
+                        <img src="./imgs/home/icon-statistics.svg" alt="">
+                      </div>
+                      <h3>+3600</h3>
+                      <p>Atendimentos realizados</p>
+                    </div>
+                  </li>
+                  <li class="col-xs-12 col-md-4 col-lg-2">
+                    <div class="estatisticas-rpm">
+                      <div class="icon-porque">
+                        <img src="./imgs/home/icon-dollars.svg" alt="">
+                      </div>
+                      <h3>+3500</h3>
+                      <p>Vendas feitas</p>
+                    </div>
+                  </li>
+              </ul> 
+          </div>
+      </div>
+    </section>
+
+    <section class="s-suporte">
+      <div class="container-pg">
+        <div class="main-top-suporte-div">
+          <div class="text-support">
+            <h2>suporte para a sua empresa não parar</h2>
+            <p>Possuímos uma equipe de suporte de TI especializada e 100% dedicada em ajudar empresas na busca de soluções que tenham como objetivo ajudar sua a empresa a alcançar melhores resultados.</p>
+            <button class="btn-secondary">Tenha mais detalhes</button>
+          </div>
+          <div class="div-tab-right">
+            <div class="scroll-person">
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <button class="nav-link active" id="nav-nuvem-tab" data-bs-toggle="tab" data-bs-target="#nav-nuvem" type="button" role="tab" aria-controls="nav-nuvem" aria-selected="true">
+                    <h3>SUPORTE DE TI</h3>
+                    <h4>EM NUVEM</h4>
+                  </button>
+                  <button class="nav-link" id="nav-servidores-tab" data-bs-toggle="tab" data-bs-target="#nav-servidores" type="button" role="tab" aria-controls="nav-servidores" aria-selected="false">
+                    <h3>SUPORTE DE TI</h3>
+                    <h4>PARA SERVIDORES</h4>
+                  </button>
+                  <button class="nav-link" id="nav-redes-tab" data-bs-toggle="tab" data-bs-target="#nav-redes" type="button" role="tab" aria-controls="nav-redes" aria-selected="false">
+                    <h3>SUPORTE DE TI</h3>
+                    <h4>PARA REDES</h4>
+                  </button>
+                  <button class="nav-link" id="nav-sistemas-tab" data-bs-toggle="tab" data-bs-target="#nav-sistemas" type="button" role="tab" aria-controls="nav-sistemas" aria-selected="false">
+                    <h3>SUPORTE DE TI</h3>
+                    <h4>EM SISTEMAS</h4>
+                  </button>
+                </div>
+              </nav>
+            </div>
+
+          <div class="popup-scroll">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="nav-nuvem" role="tabpanel" aria-labelledby="nav-nuvem-tab">
+                <p>Suporte de TI especialista em soluções de problemas em rede cloud, backup em nuvem, servidor em nuvem e qualquer problema relacionado a esta expertise. Atendemos a cloud Públicas Aws e Google Cloud.</p>
+                <div class="mini-text">
+                    <ul>
+                        <li>Solução para problemas em servidores em nuvem</li>
+                        <li>Rede em nuvem</li>
+                        <li>Firewall de acesso a servidores em nuvem</li>
+                    </ul>
+                    <button class="btn-primary">saiba mais</button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-servidores" role="tabpanel" aria-labelledby="nav-servidores-tab">
+                <p>Suporte de TI para atendimento especial em servidores, esteja em uma sala na sua empresa ou alocado em um datacenter. Realizamos todo tipo de solução para servidores, Dell, HP, IBM etc.</p>
+                <div class="mini-text">
+                    <ul>
+                        <li>Outros serviços de suporte técnico</li>
+                        <li>Backup</li>
+                        <li>Virtualização de servidores</li>
+                    </ul>
+                    <button class="btn-primary">saiba mais</button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-redes" role="tabpanel" aria-labelledby="nav-redes-tab">
+                <p>Suporte de TI para solução de problemas em rede de computadores. Solucionamos problemas em cabeamento, rede wifi, switches, roteadores, configurações e problemas de segurança da informação.</p>
+                <div class="mini-text">
+                    <ul>
+                        <li>Solução de problemas em roteadores e switches</li>
+                        <li>Soluções de backup em Rede</li>
+                        <li>Configurações de segurança</li>
+                    </ul>
+                    <button class="btn-primary">saiba mais</button>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="nav-sistemas" role="tabpanel" aria-labelledby="nav-sistemas-tab">
+              <p>Entender e desmitificar sistemas, soluções de ti para operação, controle e documentação de sistemas. Instalação, configuração e documentação de sistemas.</p>
+              <div class="mini-text">
+                  <ul>
+                      <li>Outros serviços de suporte técnico</li>
+                      <li>Licenciamento de Windows, Office e outros sistemas da Microsoft</li>
+                      <li>Monitoramento de sistemas em nuvem</li>
+                  </ul>
+                  <button class="btn-primary">saiba mais</button>
+              </div>
+              </div>
+          </div>
+          </div>
+        </div>
+        </div>
+        <div class="middle-main-suporte-div">
+          <div class="text-conheca-sup ml-0 ml-md-3 mr-lg-2">
+            <h2 class="text-center text-lg-start">Conheça nossa loja</h2>
+            <p class="text-center text-lg-start">Compre todos os periféricos que você necessita para seu computador.</p>
+            <button class="btn-secondary">acesse aqui</button>
+          </div>
+          <div class="images-cards-fan">
+            <img class="cel-mockup img-fluid" src="./imgs/home/phone.png" alt="">
+            <img class="cartao-credito img-fluid" src="./imgs/home/cartao-credito.png" alt="">
+            <img class="cupom-fiscal img-fluid" src="./imgs/home/cupom-fiscal.png" alt="">
+          </div>
+        </div>
+        
+        <div class="footer-suporte-div">
+          <h2 class="text-center">Revendedor autorizado</h2> 
+          <div class="swiper slide-marcas">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="img-fluid" src="./imgs/home/logo-acronis.svg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="img-fluid" src="./imgs/home/logo-fortinet.png" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="img-fluid" src="./imgs/home/logo-microsoft.svg" alt="">
+              </div>
+              <div class="swiper-slide">
+                <img class="img-fluid" src="./imgs/home/intelbras.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="pagination-marcas"></div>
+        </div>
+        
+      </div>
+    </section>
+
+    <footer>
+      <div class="container-pg">
+        <div class="top-footer-div">
+
+          <div class="formulario-rpm">
+            <form>
+              <legend class="mb-2 text-start">Contato</legend>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" placeholder="00 00000-0000">
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-group">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" class="form-control" id="assunto" placeholder="Sobre o que quer falar?">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="text-area-label" for="mensagem">Mensagem</label>
+                <textarea class="form-control" id="mensagem" rows="9" placeholder="Digite aqui a sua mensagem"></textarea>
+              </div>
+              <button type="submit" class="btn-secondary">Enviar Mensagem</button>
+            </form>
+          </div>
+          <div class="endereco-footer">
+            <div class="logo-footer">
+              <img class="img-fluid" src="./imgs/logo-rpm-informatica-header.svg" alt="">
+            </div>
+            <div class="contact-footer">
+              <div class="contact-item-footer">
+                <img src="./imgs/Calling.svg" alt="">
+                <a href="tel:+55213040-3773">21 3040-3773</a>
+              </div>
+              <div class="contact-item-footer">
+                <img src="./imgs/icon-whatsapp.svg" alt="">
+                <a href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
+              </div>
+              <div class="contact-item-footer">
+                <img src="./imgs/icon-message-header-mobile.svg" alt="">
+                <a href="vendas@rpminformatica.com">vendas@rpminformatica.com</a>
+              </div>
+              <div class="contact-item-footer">
+                <img src="./imgs/icon-location.svg" alt="">
+                <a href="">Rua Santa Mariana n° 351 <br> Sala 201- Higienópolis RJ</a>
+              </div>
+              <div class="social-item-footer">
+                <img src="./imgs/icon-facebook.svg" alt="">
+                <img src="./imgs/icon-instagram.svg" alt="">
+                <img src="./imgs/icon-youtube.svg" alt="">
+            </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <div class="rodape">
+
+          <div class="direitos-politica">
+
+            <div class="rpm-cnpj text-center text-md-center text-lg-start">
+              <p>RPMINFORMATICA - CNPJ: 20.801.665/0001-01 © Todos os direitos reservados. 2023</p>
+            </div>
+            <div class="politica-privacidade text-center text-md-center text-lg-start">
+              <a href="#">Política de privacidade</a>
+            </div>
+
+          </div>
+
+          <div class="desenvolvido-por">
+              <p>Desenvolvido por:</p>
+              <img src="./imgs/icon-fabiosardinha.svg" alt="">
+          </div>
+
+        </div>
+    </div>
+    </footer>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+</html>

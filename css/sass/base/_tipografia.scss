@@ -1,0 +1,50 @@
+html {
+
+    font-size: 62.5%;
+    color: var(--White);
+
+}
+
+
+h1 {
+    
+    font-family: "Rubik Mono One";
+    font-size: 4rem;
+    line-height: 4rem; 
+    letter-spacing: -0.04rem;
+
+}
+
+h2 {
+
+    /* text-align: center; */
+    font-family: "Rubik Mono One";
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.032rem;
+
+}
+
+h3 {
+
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    text-transform: uppercase;
+
+}
+
+h4 {
+
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+
+}
+
+p {
+
+    @include font-size(1.8rem);
+    line-height: 2.4rem;  
+
+}
