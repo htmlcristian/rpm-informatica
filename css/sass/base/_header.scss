@@ -3,19 +3,15 @@ header {
     margin: 0 auto;
     z-index: 10000;
 
-
     nav {
+        color: var(--Dark-Blue);
+        font-family: 'Roboto', sans-serif;
+        @include font-size(1.6rem);
+        @include rfs(140%, line-height);
+
         li {
             text-transform: uppercase;
         }
-
-        color: var(--Dark-Blue);
-        font-family: 'Roboto', sans-serif;
-        font-size: 1.6rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-
 
         .dropdown-toggle::after {
             display: inline-block;
@@ -31,11 +27,10 @@ header {
             border: 0;
             color: var(--Dark-Blue);
             font-family: 'Roboto', sans-serif;
-            font-size: 1.6rem;
-            line-height: 140%;
+            @include font-size(1.6rem);
+            @include rfs(140%, line-height);
             text-transform: uppercase;
         }
-
     }
 
     .contact-section {
@@ -50,37 +45,18 @@ header {
     }
 
     .navbar.navbar-expand-lg {
-
         padding: 0;
 
         .container {
-
             padding: 1.6rem 2.4rem;
-
         }
     }
 
-
     @media (max-width: 577px) {
-
         .navbar.navbar-expand-lg {
 
-            padding: 0;
-
-            .navbar-brand {
-
-                .img-fluid {
-
-                    max-width: 80%;
-
-                }
-
-            }
-    
-            .container {
-    
-                padding: 1.6rem;
-    
+            .navbar-brand .img-fluid {
+                max-width: 80%;
             }
         }
 
@@ -125,28 +101,20 @@ header {
 
             .container {
                 background-color: var(--White);
-                box-shadow: 0px 0px 24px -8px rgba(49, 80, 126, 0.24);
-
+                // box-shadow: 0px 0px 24px -8px rgba(49, 80, 126, 0.24);
             }
         }
     }
 
     @media (min-width: 768px) {
-        .navbar {
-            .nav-item {
-                &.dropdown {
-                    .dropdown-menu {
-                        width: 13rem;
-                    }
-                }
-            }
+        .navbar .nav-item.dropdown .dropdown-menu {
+            width: 13rem;
         }
 
         .navbar-nav {
 
-            gap: 2.4rem;
+            @include rfs(2.4rem, gap);
             margin: 0 auto;
-            
 
             .dropdown-menu.show {
                 box-shadow: 0rem 0rem 2.4rem -0.8rem rgba(49, 80, 126, 0.24);
@@ -154,8 +122,8 @@ header {
                 border: 0;
                 color: var(--Dark-Blue);
                 font-family: 'Roboto', sans-serif;
-                font-size: 1.6rem;
-                line-height: 140%;
+                @include font-size(1.6rem);
+                @include rfs(140%, line-height);
                 text-transform: uppercase;
             }
         }

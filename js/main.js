@@ -80,7 +80,7 @@ var swiperTopicos = new Swiper(".topicos-slide", {
       slidesPerView: 2.5,
       spaceBetween: 8,
     },
-    1024: {
+    993: {
       slidesPerView: 'auto',
       spaceBetween: 0,
       enable: false,
@@ -107,7 +107,7 @@ var swiperVantagensArc = new Swiper(".vantagens-acr", {
       slidesPerView: 2.5,
       spaceBetween: 8,
     },
-    1024: {
+    993: {
       slidesPerView: 'auto',
       spaceBetween: 0,
       enable: false,
