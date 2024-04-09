@@ -248,15 +248,15 @@
     }
 }
 
-.s-controle-de-dados {
+.s-controle-de-dados-acronis {
 
+    @include padding(10.4rem 0 10.4rem 0);
     background-color: var(--Blue-Light);
 
     .container-pg {
 
         .swiper.control-dados {
 
-            @include padding(10.4rem 0 10.4rem 0);
             margin: 0 auto;
 
             .swiper-wrapper {
@@ -312,6 +312,56 @@
 
         }
     }
+
+}
+
+.s-backup-acronis {
+
+    @include padding(8rem 0 8rem 0);
+    background-color: var(--White);
+
+    .container-pg {
+
+        .total-backup-acronis {
+
+            .title-text-backup-acronis {
+
+                h2 {
+
+                    color: var(--Blue-Primary);
+                    font-family: "Rubik Mono One", sans-serif;
+                    @include font-size(3.2rem);
+                    @include rfs(3.2rem, line-height);
+                    @include rfs(-0.032rem, letter-spacing);
+                    @include margin-bottom(3.2rem);
+
+                }
+
+                p {
+
+                    color: var(--Dark-Blue);
+                    @include font-size(1.6rem);
+                    @include rfs(2.4rem, line-height);
+
+                }
+
+            }
+
+            .images-backup-acronis {
+
+                margin: 0 auto;
+                align-items: center;
+                max-width: 63.5rem;
+                display: flex;
+                flex-direction: column;
+                @include rfs(0.8rem, gap)
+
+            }
+
+        }
+
+    }
+
 
 }
 
@@ -435,7 +485,7 @@
     
     }
 
-    .s-controle-de-dados {
+    .s-controle-de-dados-acronis {
 
         .container-pg {
     
@@ -519,7 +569,7 @@
     
     }
 
-    .s-controle-de-dados {
+    .s-controle-de-dados-acronis {
 
         .container-pg {
     
@@ -649,7 +699,7 @@
     
     
     }
-    .s-controle-de-dados {
+    .s-controle-de-dados-acronis {
 
         .container-pg {
     
@@ -744,23 +794,23 @@
                 display: flex;
                 justify-content: space-between;
 
-                .title-text-vantagens-acronis {
+                // .title-text-vantagens-acronis {
 
-                    // h2 {
+                //     // h2 {
 
-                    //     top: 150px;
-                    //     position: sticky;
+                //     //     top: 150px;
+                //     //     position: sticky;
 
-                    // }
+                //     // }
 
-                    // p {
+                //     // p {
 
-                    //     top: 250px;
-                    //     position: sticky;
+                //     //     top: 250px;
+                //     //     position: sticky;
 
-                    // }
+                //     // }
 
-                 }
+                //  }
 
                  .swiper.vantagens-acr {
 
@@ -803,8 +853,7 @@
             }
         }
     }
-
-    .s-controle-de-dados {
+    .s-controle-de-dados-acronis {
 
         .container-pg {
     
@@ -830,5 +879,18 @@
             }
         }
     
+    }
+    .s-backup-acronis {
+
+        .container-pg {
+    
+            .total-backup-acronis {
+
+                display: flex;
+                justify-content: space-between;
+    
+            }
+    
+        }
     }
 }
