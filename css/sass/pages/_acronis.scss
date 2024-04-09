@@ -63,12 +63,38 @@
 
 .s-topicos-acronis {
 
-    background-color: var(--Blue-Light);
+    background: url('../../../imgs/acronis/bg-list-top-acronis.png') no-repeat top center/cover var(--Blue-Light);
     @include padding(8rem 0 7.8rem 0);
 
     .container-pg {
 
         .swiper.topicos-slide {
+            
+            .swiper-pagination-topicos {
+
+                width: 100%;
+                max-width: 7.5rem;
+                @include margin(0 0 2rem auto);
+
+                .swiper-pagination-bullet {
+
+                    border-radius: 1.2rem;
+                    opacity: 0.3;
+                    background: var(--Blue-Primary);
+                    transition: all .3s;
+    
+                    &-active {
+    
+                        width: 1.723rem;
+                        opacity: 1;
+                        border-radius: 1.2rem;
+                        background: var(--Blue-Primary);
+    
+                    }
+    
+                }
+
+            }
 
             margin: 0 auto;
 
@@ -122,7 +148,109 @@
 
 }
 
-@media (max-width: 768px) {
+.s-vantagens-acronis {
+
+    max-height: 1700px;
+    @include padding(8rem 0 10rem 0);
+    background-image: url('../../../imgs/acronis/bg-vantagens-acronis.png');
+    background-color: var(--Dark-Blue-Secundary);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .container-pg {
+
+        .global-vant-acronis {
+
+            .title-text-vantagens-acronis {
+
+                max-width: 35rem;
+
+                h2 {
+
+                    color: var(--Green-Tertiary);
+                    font-family: "Rubik Mono One";
+                    @include font-size(3.2rem);
+                    @include rfs(4rem, line-height);
+                    @include rfs(-0.32px, letter-spacing);
+                    @include margin-bottom(2.4rem);
+
+                }
+
+                p {
+
+                    color: var(--White);
+                    @include font-size(1.6rem);
+                    @include rfs(2.4rem, line-height);
+                    @include margin-bottom(2.4rem);
+
+                }
+
+            }
+
+            .swiper.vantagens-acr {
+
+                max-height: 151.9rem;
+
+                .swiper-wrapper {
+
+                    .swiper-slide {
+
+                        
+                        background: var(--Blue-Primary, #1F447A);
+                        display: flex;
+                        max-width: 54rem;
+                        max-height: 27.8rem;
+                        padding: 32px;
+                        border-radius: 4px;
+
+
+                        p {
+
+                            color: var(--White);
+                            line-height: 32px;
+
+                        }
+
+                    }
+
+                }
+
+                .pagination-VantagensArc {
+
+                    width: 100%;
+                    max-width: 9rem;
+                    @include margin(0 0 2rem auto);
+    
+                    .swiper-pagination-bullet {
+    
+                        border-radius: 1.2rem;
+                        opacity: 0.3;
+                        background: var(--Green-Tertiary);
+                        transition: all .3s;
+        
+                        &-active {
+        
+                            width: 1.723rem;
+                            opacity: 1;
+                            border-radius: 1.2rem;
+                            background: var(--Green-Tertiary);
+        
+                        }
+        
+                    }
+    
+                }
+
+            }
+
+        }
+
+    }
+
+
+}
+@media only screen and (max-width: 576px) {
     .s-hero-acronis {
 
         .container-pg {
@@ -169,7 +297,6 @@
         }
         
     }
-
     .s-topicos-acronis {
       
         .container-pg {
@@ -208,32 +335,59 @@
         }
     
     }
-}
-
-@media (min-width: 769px) {
-    .s-hero-acronis {
+    .s-vantagens-acronis {
     
         .container-pg {
     
-            .global-hero-acronis {
-
-                // display: flex;
-                // justify-content: space-between;
-                // align-items: center;
-                @include padding-top(20.7rem);
+            .global-vant-acronis {
     
-                // .title-hero-acronis {
+                .title-text-vantagens-acronis {
     
-                    
+                    width: 100%;
     
-                // }
+                }
 
-                .text-hero-acronis {
+                .swiper.vantagens-acr {
 
-                    display: flex;
-                    justify-content: space-between;
-
-
+                    max-height: 151.9rem;
+    
+                    .swiper-wrapper {
+    
+                        .swiper-slide {
+    
+                            min-height: 33rem;
+    
+                        }
+    
+                    }
+    
+                }
+    
+            }
+    
+        }
+    
+    
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    
+    .s-topicos-acronis {
+      
+        .container-pg {
+    
+            .swiper.topicos-slide {
+    
+                margin: 0 auto;
+    
+                .swiper-wrapper {
+    
+                    .swiper-slide {
+    
+                        min-height: 66rem;
+                        
+                    }
+    
                 }
     
             }
@@ -241,31 +395,101 @@
         }
     
     }
-    .s-topicos-acronis {
+    .s-vantagens-acronis {
+    
+        .container-pg {
+    
+            .global-vant-acronis {
+    
+                .title-text-vantagens-acronis {
+    
+                    width: 100%;
+    
+                }
 
-        background-color: var(--Blue-Light);
+                .swiper.vantagens-acr {
+
+                    max-height: 151.9rem;
+    
+                    .swiper-wrapper {
+    
+                        .swiper-slide {
+    
+                            min-height: 44rem;
+    
+                        }
+    
+                    }
+    
+                }
+    
+            }
+    
+        }
     
     
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .s-hero-acronis {
+
+        .container-pg {
+        
+            .global-hero-acronis {
+
+                .text-hero-acronis {
+
+                    p {
+
+                        max-width: 100%;
+                        font-size: 1.4rem;
+                        margin-bottom: 3.2rem;
+    
+                    }
+
+                    img {
+
+                        margin: 0 auto;
+                        width: 100%;
+
+                    }
+
+                }
+            }
+        
+        }
+        
+    }
+    .s-topicos-acronis {
+      
         .container-pg {
     
             .swiper.topicos-slide {
     
+                margin: 0 auto;  
 
                 .swiper-wrapper {
     
-                    max-width: 111.4rem;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 2.2rem;
-                    flex-wrap: wrap;
-
-    
                     .swiper-slide {
     
-                        max-width: 54rem;
-                        min-height: 44rem;
+                        min-height: 61rem;
+                        
+                        .subtittle-topico-acr {
 
+                            h2 {
+
+                                font-size: 1.6rem;
+
+                            }
+
+                            p {
+
+                                font-size: 1.4rem;
+
+                            }
+
+                        }
                     }
     
                 }
@@ -276,3 +500,244 @@
     
     }
 }
+
+
+// @media (min-width: 769px) {
+//     .s-hero-acronis {
+    
+//         .container-pg {
+    
+//             .global-hero-acronis {
+
+//                 // display: flex;
+//                 // justify-content: space-between;
+//                 // align-items: center;
+//                 @include padding-top(20.7rem);
+    
+//                 // .title-hero-acronis {
+    
+                    
+    
+//                 // }
+
+//                 .text-hero-acronis {
+
+//                     display: flex;
+//                     justify-content: space-between;
+
+
+//                 }
+    
+//             }
+    
+//         }
+    
+//     }
+//     .s-topicos-acronis {
+
+//         background-color: var(--Blue-Light);
+    
+    
+//         .container-pg {
+    
+//             .swiper.topicos-slide {
+    
+
+//                 .swiper-wrapper {
+    
+//                     max-width: 111.4rem;
+//                     display: flex;
+//                     align-items: center;
+//                     justify-content: center;
+//                     gap: 2.2rem;
+//                     flex-wrap: wrap;
+
+    
+//                     .swiper-slide {
+    
+//                         max-width: 54rem;
+//                         min-height: 44rem;
+
+//                     }
+    
+//                 }
+    
+//             }
+    
+//         }
+    
+//     }
+//     .s-vantagens-acronis {
+
+//         .container-pg {
+    
+//             .global-vant-acronis {
+                
+//                 display: flex;
+//                 justify-content: space-between;
+
+//                 .title-text-vantagens-acronis {
+
+//                     h2 {
+
+//                         top: 150px;
+//                         position: sticky;
+
+//                     }
+
+//                     p {
+
+//                         top: 250px;
+//                         position: sticky;
+
+//                     }
+
+//                 }
+
+//                 .swiper.vantagens-acr {
+
+//                     height: 151.9rem;
+
+//                     .swiper-wrapper {
+                        
+//                         display: flex;
+//                         flex-direction: column;
+//                         gap: 3.2rem;
+    
+//                     }
+    
+//                 }
+    
+//             }
+    
+//         }
+    
+    
+//     }
+// }
+
+
+
+
+// @media (max-width: 768px) {
+//     .s-hero-acronis {
+
+//         .container-pg {
+        
+//             .global-hero-acronis {
+
+//                 padding: 28.8rem 0 3.2rem 0;
+//                     // @include padding-top(20.7rem);
+        
+//                 .title-hero-acronis {
+        
+//                     h1 {
+        
+//                         opacity: 0;
+//                         position: absolute;
+//                         left: 32px;
+//                         top: 140px;
+                        
+        
+//                     }
+        
+//                 }
+                
+//                 .text-hero-acronis {
+
+//                     p {
+
+//                         max-width: 100%;
+//                         font-size: 1.4rem;
+//                         margin-bottom: 3.2rem;
+    
+//                     }
+
+//                     img {
+
+//                         margin: 0 auto;
+//                         width: 100%;
+
+//                     }
+
+//                 }
+//             }
+        
+//         }
+        
+//     }
+
+//     .s-topicos-acronis {
+      
+//         .container-pg {
+    
+//             .swiper.topicos-slide {
+    
+//                 margin: 0 auto;
+    
+//                 .swiper-wrapper {
+    
+//                     .swiper-slide {
+    
+//                         min-height: 43rem;
+                        
+//                         .subtittle-topico-acr {
+
+//                             h2 {
+
+//                                 font-size: 1.9rem;
+
+//                             }
+
+//                             p {
+
+//                                 font-size: 1.4rem;
+
+//                             }
+
+//                         }
+//                     }
+    
+//                 }
+    
+//             }
+    
+//         }
+    
+//     }
+
+//     .s-vantagens-acronis {
+    
+//         .container-pg {
+    
+//             .global-vant-acronis {
+    
+//                 .title-text-vantagens-acronis {
+    
+//                     width: 100%;
+    
+//                 }
+
+//                 .swiper.vantagens-acr {
+
+//                     max-height: 151.9rem;
+    
+//                     .swiper-wrapper {
+    
+//                         .swiper-slide {
+    
+//                             min-height: 33rem;
+    
+//                         }
+    
+//                     }
+    
+//                 }
+    
+//             }
+    
+//         }
+    
+    
+//     }
+// }

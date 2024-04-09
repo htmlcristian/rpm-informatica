@@ -90,3 +90,30 @@ var swiperTopicos = new Swiper(".topicos-slide", {
     },
   }
 });
+
+var swiperVantagensArc = new Swiper(".vantagens-acr", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".pagination-VantagensArc",
+    clickable: true,
+  },
+  breakpoints: {
+    375: {
+      slidesPerView: 1.2,
+      spaceBetween: 8,
+    },
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 8,
+    },
+    1024: {
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+      enable: false,
+      loop: false,
+      autoplay: false,
+      allowTouchMove: false,
+    },
+  }
+});
