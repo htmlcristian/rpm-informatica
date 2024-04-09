@@ -85,6 +85,32 @@
 
 }
 
+.green-pagination {
+
+  width: 100%;
+  max-width: 9rem;
+  @include margin(0 0 2rem auto);
+
+  .swiper-pagination-bullet {
+
+      border-radius: 1.2rem;
+      opacity: 0.3;
+      background: var(--Green-Tertiary);
+      transition: all .3s;
+
+      &-active {
+
+          width: 1.723rem;
+          opacity: 1;
+          border-radius: 1.2rem;
+          background: var(--Green-Tertiary);
+
+      }
+
+  }
+
+}
+
 
 
   

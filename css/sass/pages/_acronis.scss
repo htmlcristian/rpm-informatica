@@ -248,6 +248,73 @@
     }
 }
 
+.s-controle-de-dados {
+
+    background-color: var(--Blue-Light);
+
+    .container-pg {
+
+        .swiper.control-dados {
+
+            @include padding(10.4rem 0 10.4rem 0);
+            margin: 0 auto;
+
+            .swiper-wrapper {
+
+                max-width: 109.4rem;
+
+                .swiper-slide {
+
+                    max-width: 33.4rem;
+
+                    .item-controle {
+
+                        .mini-text{
+
+                            img {
+
+                                max-height: 6.4rem;
+                                max-width: 6.4rem;
+                                @include margin-bottom(0.8rem);
+
+                            }
+
+                            h4 {
+
+                                color: var(--Blue-Primary);
+                                font-family: "Rubik Mono One", sans-serif;
+                                @include font-size(2.4rem);
+                                @include rfs(120%, line-height);
+                                @include rfs(-0.024rem, letter-spacing);
+                                @include margin-bottom(3rem);
+
+                            }
+
+                        }
+
+                        p {
+
+                            color: var(--Dark-Blue);
+                            @include font-size(1.6rem);
+                            @include rfs(2.4rem, line-height);
+
+                        }
+                    }
+                }
+
+            }
+            
+            .pagination-control-dados {
+
+                max-width: 11rem;
+
+            }
+
+        }
+    }
+
+}
+
 @media only screen and (max-width: 576px) {
     .s-hero-acronis {
 
@@ -367,6 +434,30 @@
     
     
     }
+
+    .s-controle-de-dados {
+
+        .container-pg {
+    
+            .swiper.control-dados {
+    
+                .swiper-wrapper {
+
+                    .swiper-slide {
+    
+                        @include padding(2.4rem);
+                        min-height: 33.8rem;
+                        background-color: var(--White);
+                        border-radius: 0.8rem;
+
+                    }
+    
+                }
+    
+            }
+        }
+    
+    }
 }
 @media only screen and (min-width: 577px) and (max-width: 768px) {
     
@@ -425,6 +516,30 @@
     
         }
     
+    
+    }
+
+    .s-controle-de-dados {
+
+        .container-pg {
+    
+            .swiper.control-dados {
+    
+                .swiper-wrapper {
+    
+                    .swiper-slide {
+    
+                        padding: 2.4rem 1.2rem;
+                        min-height: 45rem;
+                        background-color: var(--White);
+                        border-radius: 0.8rem;
+    
+                    }
+    
+                }
+    
+            }
+        }
     
     }
 }
@@ -516,7 +631,12 @@
                         .swiper-slide {
     
                             min-height: 36.8rem;
-    
+                            
+                            p {
+
+                                font-size: 1.8rem;
+
+                            }
                         }
     
                     }
@@ -527,6 +647,29 @@
     
         }
     
+    
+    }
+    .s-controle-de-dados {
+
+        .container-pg {
+    
+            .swiper.control-dados {
+    
+                .swiper-wrapper {
+    
+                    .swiper-slide {
+                        
+                        padding: 2.4rem 1.2rem;
+                        min-height: 46rem;
+                        background-color: var(--White);
+                        border-radius: 0.8rem;
+
+                    }
+    
+                }
+    
+            }
+        }
     
     }
 }
@@ -603,19 +746,19 @@
 
                 .title-text-vantagens-acronis {
 
-                    h2 {
+                    // h2 {
 
-                        top: 150px;
-                        position: sticky;
+                    //     top: 150px;
+                    //     position: sticky;
 
-                    }
+                    // }
 
-                    p {
+                    // p {
 
-                        top: 250px;
-                        position: sticky;
+                    //     top: 250px;
+                    //     position: sticky;
 
-                    }
+                    // }
 
                  }
 
@@ -659,5 +802,33 @@
                 }
             }
         }
+    }
+
+    .s-controle-de-dados {
+
+        .container-pg {
+    
+            .swiper.control-dados {
+
+                .pagination-control-dados {
+
+                    display: none;
+    
+                }
+    
+                margin: 0 auto;
+
+                .swiper-wrapper {
+    
+                    display: flex;
+                    align-items: baseline;
+                    flex-wrap: wrap;
+                    @include rfs(4.6rem, gap);
+    
+                }
+    
+            }
+        }
+    
     }
 }

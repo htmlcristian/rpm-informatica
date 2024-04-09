@@ -117,3 +117,30 @@ var swiperVantagensArc = new Swiper(".vantagens-acr", {
     },
   }
 });
+
+var swiper = new Swiper(".control-dados", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".pagination-control-dados",
+    clickable: true,
+  },
+  breakpoints: {
+    375: {
+      slidesPerView: 1.2,
+      spaceBetween: 8,
+    },
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 8,
+    },
+    993: {
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+      enable: false,
+      loop: false,
+      autoplay: false,
+      allowTouchMove: false,
+    },
+  }
+});
