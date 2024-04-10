@@ -1,0 +1,560 @@
+.s-hero-alarme {
+
+    background-image: url('../../../imgs/alarme/bg-s-hero-alarme.png');
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--Dark-Blue);
+    @include padding(20rem 0 25rem 0);
+
+    .container-pg {
+
+        .main-text-hero-alarme {
+
+            h1 {
+
+                color: var(--White);
+                font-family: "Rubik Mono One", sans-serif;
+                @include font-size(4rem);
+                @include rfs(4rem, line-height);
+                @include rfs(-2.8px, letter-spacing);
+
+            }
+
+            p {
+
+                color: var(--White);
+                @include font-size(1.8rem);
+                @include rfs(3.2rem, line-height);
+
+            }
+
+        }
+    }
+}
+
+.s-instalacao-alarme {
+
+    background-image: url('../../../imgs/alarme/bg-instalacao-arma.png');
+    background-color: var(--Blue-Light);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    @include padding(8.8rem 0 10.4rem 0);
+    overflow: hidden;
+
+    .container-pg {
+
+        .top-div-alarme {
+
+            .text-intalacao-alarme {
+
+                h2 {
+
+                    color: var(--Blue-Primary);
+                    font-family: "Rubik Mono One";
+                    @include font-size(3.2rem);
+                    @include rfs(3.2rem, line-height);
+                    @include rfs(-0.064rem, letter-spacing);
+                    @include margin-bottom(4rem);
+
+                }
+
+                p {
+
+                    color: var(--Dark-Blue);
+                    @include font-size(2rem);
+                    @include rfs(3.2rem, line-height);
+
+                }
+
+
+            }
+
+        }
+
+        .middle-div-alarme {
+
+            @include margin-top(8rem);
+
+            h2 {
+
+                color: var(--Blue-Primary);
+                text-align: center;
+                font-family: "Rubik Mono One", sans-serif;
+                @include font-size(3.2rem);
+                @include rfs(4rem, line-height);
+                @include rfs(-0.032rem, letter-spacing);
+                @include margin(0 auto 3.2rem auto);
+
+            }
+
+            .mini-item-alarme {
+
+                @include padding(2.4rem);
+                background-color: var(--White);
+                border-radius: 0.4rem;
+                box-shadow: 0px 0px 40px 0px rgba(31, 68, 122, 0.08);
+
+                p {
+
+                    color: var(--Dark-Blue);
+                    @include font-size(2rem);
+                    @include rfs(3.2rem, line-height);
+
+                }
+
+            }
+
+        }
+
+        .bottom-div-alarme {
+
+            @include margin-top(12rem);
+
+            h2 {
+
+                color: var(--Blue-Primary);
+                font-family: "Rubik Mono One", sans-serif;
+                @include font-size(3.2rem);
+                @include rfs(3.2rem, line-height);
+                @include rfs(-0.064rem, letter-spacing);
+                @include margin-bottom(3.2rem);
+
+            }
+
+            .total-div-bottom {
+
+                .text-protecao-alarme {
+
+                    p {
+
+                        color: var(--Dark-Blue);
+                        @include font-size(1.6rem);
+                        @include rfs(2.4rem, line-height);
+
+                    }
+
+                }
+
+                .popup-alarme {
+
+                    @include padding(2.4rem);
+                    @include rfs(2.4rem, gap);
+                    max-width: 44.5rem;
+                    background-color: var(--White);
+                    border-radius: 0.8rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    
+                    h4 {
+
+                        color: var(--Blue-Primary);
+                        font-family: 'Roboto', sans-serif;
+                        text-transform: none;
+                        @include font-size(2.3rem);
+                        @include rfs(700, font-weight);
+                        @include rfs(120%, line-height);
+
+                    }
+
+                    p {
+
+                        color: var(--Dark-Blue);
+                        opacity: 0.8;
+                        @include font-size(1.6rem);
+                        @include rfs(130%, line-height);
+
+                    }
+
+
+                }
+
+            }
+
+
+        }
+
+    }
+}
+@media only screen and (max-width: 576px) {
+
+    .s-hero-alarme {
+    
+        background-size: cover;
+        padding: 43.8rem 0 2.4rem 0;
+
+    }
+
+    .s-instalacao-alarme {
+
+        .container-pg {
+
+            .top-div-alarme {
+
+
+                .text-intalacao-alarme {
+
+                    margin-bottom: 3.2rem;
+
+                }
+
+                .images-instalacao-alarme {
+                
+                    max-width: 70%;
+                    position: relative;
+                    margin: 0 auto;
+                
+                    .img-alarm-01 {
+                        
+                        position: relative;
+    
+                    } 
+    
+                    .img-alarm-02 {
+    
+                        position: absolute;
+                        max-width: 60%;
+                        top: 120px;
+                        right: -35px;  
+                        animation: float 4.5s infinite;   
+    
+                    }
+    
+                    .img-alarm-03 {
+    
+                        position: absolute;
+                        top: 120px;
+                        left: -55px;
+                        max-width: 60%;
+                        animation: float 4s infinite;
+    
+                    }
+    
+                }
+
+
+
+            }
+
+            .middle-div-alarme {
+
+                margin-top: 16.5rem;
+
+                h2 {
+
+                    font-size: 1.6rem;
+    
+                }
+
+            }
+
+            .total-div-bottom {
+
+                .popup-alarme {
+
+                    @include margin(3.2rem auto 0 auto)
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    .s-hero-alarme {
+    
+        background-size: cover;
+        padding: 43.8rem 0 2.4rem 0;
+
+    }
+
+    .s-instalacao-alarme {
+
+        .container-pg {
+
+            .top-div-alarme {
+
+                .text-intalacao-alarme {
+
+                    margin-bottom: 3.2rem;
+
+                }
+
+                .images-instalacao-alarme {
+                
+                    max-width: 70%;
+                    position: relative;
+                    margin: 0 auto;
+                
+                    .img-alarm-01 {
+                        
+                        position: relative;
+    
+                    } 
+    
+                    .img-alarm-02 {
+    
+                        position: absolute;
+                        max-width: 50%;
+                        top: 170px;
+                        right: -90px; 
+                        animation: float 4.5s infinite;   
+    
+                    }
+    
+                    .img-alarm-03 {
+    
+                        position: absolute;
+                        top: 120px;
+                        left: -110px;
+                        max-width: 50%;
+                        animation: float 4s infinite;
+    
+                    }
+    
+                }
+
+            }
+
+            .middle-div-alarme {
+
+                h2 {
+
+                    font-size: 2.4rem;
+
+                }
+
+                margin-top: 16.5rem;
+                
+            }
+
+            .total-div-bottom {
+
+                .popup-alarme {
+
+                    @include margin(3.2rem auto 0 auto)
+
+                }
+
+            }
+        }
+
+    }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .s-hero-alarme {
+    
+        background-size: cover;
+        padding: 43.8rem 0 2.4rem 0;
+
+    }
+
+    .s-instalacao-alarme {
+
+        .container-pg {
+
+            .top-div-alarme {
+
+                .text-intalacao-alarme {
+
+                    margin-bottom: 3.2rem;
+
+                }
+
+                .images-instalacao-alarme {
+                
+                    max-width: 70%;
+                    position: relative;
+                    margin: 0 auto;
+                
+                    .img-alarm-01 {
+                        
+                        position: relative;
+    
+                    } 
+    
+                    .img-alarm-02 {
+    
+                        position: absolute;
+                        max-width: 50%;
+                        top: 170px;
+                        right: -90px; 
+                        animation: float 4.5s infinite;   
+    
+                    }
+    
+                    .img-alarm-03 {
+    
+                        position: absolute;
+                        top: 120px;
+                        left: -110px;
+                        max-width: 50%;
+                        animation: float 4s infinite;
+    
+                    }
+    
+                }
+
+            }
+
+            .middle-div-alarme {
+
+                h2 {
+
+                    font-size: 2.4rem;
+
+                }
+
+                margin-top: 19.5rem;
+
+                .mini-item-alarme {
+    
+                    min-height: 18rem;
+    
+                }
+                
+            }
+            
+            .total-div-bottom {
+
+                .popup-alarme {
+
+                    @include margin(3.2rem auto 0 auto)
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}
+@media only screen and (min-width: 993px) {
+
+    .s-hero-alarme {
+    
+        background-size: cover;
+
+            .container-pg {
+        
+                display: flex;
+                flex-direction: row-reverse;
+
+                .main-text-hero-alarme {
+        
+                    max-width: 63.9rem;
+                    
+                }
+            }
+    }
+
+    .s-instalacao-alarme {
+
+    
+        .container-pg {
+    
+            .top-div-alarme {
+    
+                display: flex;
+                justify-content: space-between;
+    
+    
+                .text-intalacao-alarme {
+    
+                    max-width: 33.3rem;
+    
+                }
+    
+                .images-instalacao-alarme {
+    
+                    max-width: 63.5rem;
+                    max-height: 78.4rem;
+                    position: relative;
+                
+                    .img-alarm-01 {
+    
+                        max-width: 51.6rem;
+                        position: relative;
+                        right: 32px;
+    
+                    } 
+    
+                    .img-alarm-02 {
+    
+                        position: absolute;
+                        top: 304px;
+                        right: -50px;
+                        animation: float 4.5s infinite;
+                    }
+    
+                    .img-alarm-03 {
+    
+                        position: relative;
+                        bottom: 104px;
+                        left: -95px;
+                        animation: float 3.5s infinite;
+    
+    
+                    }
+    
+    
+                }
+    
+            }
+
+            .middle-div-alarme {
+
+                h2 {
+                
+                    max-width: 81.6rem;
+
+                }
+
+                .mini-item-alarme {
+    
+                    min-height: 12.2rem;
+    
+                }
+    
+            }
+
+            .bottom-div-alarme {
+  
+                h2 {
+    
+                    max-width: 82.4rem;
+
+                }
+
+                .total-div-bottom {
+
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .text-protecao-alarme {
+
+                        max-width: 53.9rem;
+
+                    }
+
+                }
+    
+            }
+    
+        }
+    }
+
+
+}

@@ -900,6 +900,7 @@
 
                 .swiper-wrapper {
     
+                    justify-content: center;
                     display: flex;
                     align-items: baseline;
                     flex-wrap: wrap;
@@ -914,6 +915,11 @@
     .s-backup-acronis {
 
         .container-pg {
+            .title-text-backup-acronis {
+
+                max-width: 43.8rem;
+
+            }
     
             .total-backup-acronis {
 
