@@ -1,0 +1,447 @@
+.s-hero-pabx {
+
+    background-image: url('../../../imgs/pabx/bg-s-hero-pabx.png');
+    background-color: var(--Dark-Blue);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include padding(20rem 0 34.7rem 0);
+
+
+    .container-pg {
+
+
+        h1 {
+
+            color: var(--White);
+            font-family: "Rubik Mono One", sans-serif;
+            @include font-size(4rem);
+            @include rfs(4rem, line-height);
+            @include rfs(-0.28rem, letter-spacing);
+            @include margin-bottom(4rem);
+
+        }
+
+        p {
+
+            color: var(--White);
+            @include font-size(1.8rem);
+            @include rfs(32px, line-height);
+
+        }
+
+    }
+
+}
+
+.s-instalacao-pabx {
+
+    background-image: url('../../../imgs/pabx/bg-s-instalacao-pabx.png');
+    background-color: var(--Blue-Light);
+    background-position: top center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @include padding(8.8rem 0 9.8rem 0);
+
+    .container-pg {
+
+        h2 {
+
+            color: var(--Blue-Primary);
+            font-family: "Rubik Mono One", sans-serif;
+            @include font-size(3.2rem);
+            @include rfs(3.2rem, line-height);
+            @include rfs(-0.064rem, letter-spacing);
+            @include margin-bottom(4rem);
+
+        }
+
+        .total-div-top-instalacao-pabx {
+
+            .main-text-top-pabx {
+
+                p {
+
+                    color: var(--Dark-Blue);
+                    @include font-size(2.4rem);
+                    @include rfs(3.2rem, line-height);
+
+
+                }
+
+            }
+
+            .colunas-top-pabx {
+                
+                .row {
+
+                    @include rfs(2.4rem, gap);
+
+                    p {
+
+                        border-radius: 4px;
+                        background: var(--White);
+                        box-shadow: 0px 0px 40px 0px rgba(31, 68, 122, 0.08);
+                        color: var(--Dark-Blue);
+                        @include padding(2.4rem);
+                        @include font-size(2.4rem);
+                        @include rfs(3.2rem, line-height);
+    
+                    }
+
+                }
+
+            }
+        }
+
+        .total-bot-div-pabx {
+
+            @include margin-top(16.8rem);
+
+            .text-bot-pabx {
+
+                p {
+
+                    color: var(--Dark-Blue);
+                    @include font-size(3.2rem);
+                    @include rfs(4rem, line-height);
+
+                }
+
+            }
+
+            .images-bot-pabx {
+
+                max-width: 54.2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 0.8rem;
+
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .s-hero-pabx {
+
+        padding: 545px 0 2.9rem 0;
+
+        .container-pg {
+
+            .main-text-hero-pabx {
+
+
+                h1 {
+
+                    font-size: 2.5rem;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .s-instalacao-pabx {
+    
+        background-size: cover;
+
+        .container-pg {
+    
+            // h2 {
+
+            //     max-width: 28.4rem;
+
+            // }
+
+            .total-div-top-instalacao-pabx {
+
+                .main-text-top-pabx {
+    
+                    margin-bottom: 3.2rem;
+
+                }
+    
+                .colunas-top-pabx {
+                    
+                    .row {
+
+                        gap: 0.8rem;
+
+                    }
+
+                }
+            }
+    
+            .total-bot-div-pabx {
+    
+                .text-bot-pabx {
+    
+                    p {
+    
+                        font-size: 1.9rem;
+    
+                    }
+
+                    @include margin-bottom(3.2rem);
+    
+                }
+    
+                .images-bot-pabx {
+    
+                    margin: 0 auto;
+
+                }
+    
+            }
+        }
+    
+    }
+
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    .s-hero-pabx {
+
+        padding: 54.5rem 0 2.9rem 0;
+
+        .container-pg {
+
+            .main-text-hero-pabx {
+
+
+                h1 {
+
+                    font-size: 3.5rem;
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .s-instalacao-pabx {
+    
+        background-size: cover;
+
+        .container-pg {
+    
+            // h2 {
+
+            //     max-width: 28.4rem;
+
+            // }
+
+            .total-div-top-instalacao-pabx {
+
+                .main-text-top-pabx {
+    
+                    margin-bottom: 3.2rem;
+
+                }
+    
+                .colunas-top-pabx {
+                    
+                    .row {
+
+                        gap: 0.8rem;
+
+                    }
+
+                }
+            }
+    
+            .total-bot-div-pabx {
+    
+                .text-bot-pabx {
+    
+                    p {
+    
+                        font-size: 1.9rem;
+    
+                    }
+
+                    @include margin-bottom(3.2rem);
+    
+                }
+    
+                .images-bot-pabx {
+                    
+                    margin: 0 auto;
+    
+                }
+    
+            }
+        }
+    
+    }  
+
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .s-hero-pabx {
+
+        padding: 50.5rem 0 2.9rem 0;
+
+        .container-pg {
+
+            .main-text-hero-pabx {
+
+
+                h1 {
+
+                    font-size: 3.5rem;
+
+                }
+
+            }
+
+        }
+
+    }
+    .s-instalacao-pabx {
+    
+        background-size: cover;
+
+        .container-pg {
+    
+            // h2 {
+
+            //     max-width: 28.4rem;
+
+            // }
+
+            .total-div-top-instalacao-pabx {
+
+                .main-text-top-pabx {
+    
+                    margin-bottom: 3.2rem;
+
+                }
+    
+                .colunas-top-pabx {
+                    
+                    .row {
+
+                        gap: 1.5rem;
+
+                    }
+
+                }
+            }
+
+            .total-bot-div-pabx {
+    
+                .text-bot-pabx {
+    
+                    p {
+    
+                        font-size: 2.4rem;
+    
+                    }
+
+                    @include margin-bottom(3.2rem);
+    
+                }
+    
+                .images-bot-pabx {
+                    
+                    margin: 0 auto;
+    
+                }
+    
+            }
+    
+        }
+    
+    }
+
+}
+@media only screen and (min-width: 993px) {
+
+    .s-hero-pabx {
+    
+        .container-pg {
+    
+            display: flex;
+            flex-direction: row-reverse;
+    
+            h1 {
+
+                max-width: 63.9rem;
+    
+            }
+    
+            p {
+                
+                max-width: 63.9rem;
+
+            }
+    
+        }
+    
+    }
+
+    .s-instalacao-pabx {
+    
+        .container-pg {
+    
+            h2 {
+
+                max-width: 28.4rem;
+
+            }
+
+            .total-div-top-instalacao-pabx {
+
+                display: flex;
+                justify-content: space-between;
+
+                .main-text-top-pabx {
+    
+                    max-width: 44.3rem;
+
+                }
+    
+                .colunas-top-pabx {
+    
+                    max-width: 54rem;
+    
+                }
+            }
+    
+            .total-bot-div-pabx {
+
+                display: flex;
+                justify-content: space-between;
+
+                .text-bot-pabx {
+    
+                    max-width: 44.4rem;
+                    transition: top 0.3s ease;
+
+                    p {
+
+                        position: sticky;
+                        top: 15rem;
+
+                    }
+    
+                }
+    
+            }
+        }
+    
+    }
+
+}
