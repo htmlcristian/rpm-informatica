@@ -1,0 +1,459 @@
+.s-hero-cftv {
+
+    background-image: url('../../../imgs/cftv/bg-s-hero-cftv.png');
+    background-color: var(--Dark-Blue);
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: contain;
+    @include padding(20rem 0 28.8rem 0);
+
+    .container-pg {
+
+        .main-text-s-hero-cftv {
+
+            h1 {
+
+                color: var(--White);
+                font-family: "Rubik Mono One", sans-serif;
+                @include font-size(4rem);
+                @include rfs(4rem, line-height);
+                @include rfs(-0.28rem, letter-spacing);
+                @include margin-bottom(3.2rem);
+
+            }
+
+            p {
+
+                color: var(--White);
+                @include font-size(1.8rem);
+                @include rfs(3.2rem, line-height);
+
+            }
+
+        }
+
+    }
+
+}
+.s-diferenciais-cftv {
+
+    @include padding(8rem 0 11.2rem 0);
+    background-color: var(--Blue-Light);
+    background-image: url('../../../imgs/cftv/bg-diferenciais-v2.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    .container-pg {
+
+        .main-text-top-diferenciais {
+
+            p {
+
+                color: var(--Dark-Blue);
+                @include font-size(2.4rem);
+                @include rfs(3.2rem, line-height);
+
+            }
+
+            @include margin-bottom(10.4rem);
+
+        }
+
+        .title-diferenciais {
+
+            h2 {
+
+                color: var(--Blue-Primary);
+                font-family: "Rubik Mono One", sans-serif;
+                @include font-size(3.2rem);
+                @include rfs(4rem, line-height);
+                @include rfs(-0.032rem, letter-spacing);
+                margin-bottom: -115px;
+
+            }
+
+        }
+
+        .grid-diferenciais {
+
+            display: flex;
+            flex-direction: row-reverse;
+    
+            .todos-diferenciais {
+    
+                max-width: 73rem;
+
+                .row {
+
+                    gap: 24px;
+
+                    .item-diferenciais {
+
+                        @include padding(2.4rem);
+                        max-width: 22.3rem;
+                        border-radius: 4px;
+                        background: var(--White);
+                        box-shadow: 0px 0px 40px 0px rgba(31, 68, 122, 0.08);
+    
+                    }
+
+                }
+    
+            }
+
+        }
+
+        .sec-text-bottom-diferenciais {
+
+            @include margin-top(4.8rem);
+
+            p {
+
+                color: var(--Dark-Blue);
+                @include font-size(1.6rem);
+                @include rfs(2.4rem, line-height);
+
+            }
+        }
+
+        .images-text-cftv {
+
+            @include margin-top(8rem);
+
+            .row {
+
+                @include rfs(3.1rem, gap);
+                @include margin-bottom(8rem);
+                align-items: flex-start;
+
+                h2 {
+
+                    color: var(--Blue-Primary);
+                    font-family: "Rubik Mono One", sans-serif;
+                    @include font-size(8rem);
+                    @include rfs(65%, line-height);
+                    @include rfs(-0.08rem, letter-spacing);
+
+                }
+
+                h3 {
+
+                    color: var(--Blue-Primary);
+                    font-family: "Rubik Mono One", sans-serif;
+                    @include font-size(3.2rem);
+                    @include rfs(140%, line-height);
+                    @include rfs(-0.032rem, letter-spacing);
+                    @include margin-bottom(4rem);
+
+                }
+
+                p {
+
+                    color: var(--Dark-Blue);
+                    @include font-size(1.6rem);
+                    @include rfs(2.4rem, line-height);
+
+                }
+
+                &:last-child {
+
+                    margin-bottom: 0;
+
+                }
+
+            }
+
+        }
+
+    }
+}
+.s-contato-cftv {
+
+    background-image: url('../../../imgs/cftv/bg-s-contato-cftv.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--Dark-Blue);
+    @include padding(8rem 0 8rem 0);
+
+    .container-pg {
+
+        .card-contato-cftv {
+            
+            h2 {
+
+                color: var(--Green-Tertiary);
+                font-family: "Rubik Mono One", sans-serif;
+                @include font-size(3.2rem);
+                @include rfs(3.2rem, line-height);
+                @include rfs(-0.032rem, letter-spacing);
+                @include margin-bottom(2.4rem);
+
+            }
+
+            p {
+
+                color: var(--White);
+                @include font-size(1.8rem);
+                @include rfs(3.2rem, line-height);
+                @include margin-bottom(4rem);
+
+            }
+
+        }  
+
+    }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+    .s-hero-cftv {
+
+        background-size: cover;
+        background-position: center;
+        padding: 42rem 0 3.2rem 0;
+    
+        .container-pg {
+    
+            .main-text-s-hero-cftv {
+    
+                h1 {
+
+                    font-size: 3rem;
+
+                }
+    
+            }
+    
+        }
+    
+    }
+
+    .s-diferenciais-cftv {
+
+        .container-pg {
+    
+            .title-diferenciais {
+    
+                h2 {
+
+                    text-align: center;
+                    @include font-size(3rem);
+                    @include margin-bottom(3.2rem);
+    
+                }
+    
+            }
+    
+            .grid-diferenciais {
+
+                .todos-diferenciais {
+    
+                    .row {
+
+                        justify-content: center;
+
+                    }
+    
+                }
+
+            }
+    
+        }
+    }
+
+    .s-contato-cftv {
+    
+        background-size: cover;
+
+    }
+
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    .s-hero-cftv {
+
+        background-size: cover;
+        background-position: center;
+        padding: 44.4rem 0 3.2rem 0;
+    
+        .container-pg {
+    
+            .main-text-s-hero-cftv {
+    
+                h1 {
+
+                    font-size: 3rem;
+
+                }
+    
+            }
+    
+        }
+    
+    }
+
+    .s-diferenciais-cftv {
+
+        .container-pg {
+        
+            .title-diferenciais {
+    
+                h2 {
+
+                    text-align: center;
+                    @include font-size(3rem);
+                    @include margin-bottom(3.2rem);
+    
+                }
+    
+            }
+    
+            .grid-diferenciais {
+
+                .todos-diferenciais {
+    
+                    .row {
+
+                        justify-content: center;
+
+                    }
+    
+                }
+
+            }
+    
+        }
+    }
+
+    .s-contato-cftv {
+    
+        background-size: cover;
+        
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .s-hero-cftv {
+
+        background-size: cover;
+        background-position: center;
+        padding: 47.3rem 0 3.2rem 0;
+    
+        .container-pg {
+    
+            .main-text-s-hero-cftv {
+    
+                h1 {
+
+                    font-size: 3rem;
+
+                }
+    
+            }
+    
+        }
+    
+    }
+
+    .s-diferenciais-cftv {
+
+        .container-pg {
+        
+            .title-diferenciais {
+    
+                h2 {
+
+                    text-align: center;
+                    @include font-size(3rem);
+                    @include margin-bottom(3.2rem);
+    
+                }
+    
+            }
+    
+            .grid-diferenciais {
+
+                .todos-diferenciais {
+    
+                    .row {
+
+                        justify-content: center;
+
+                    }
+    
+                }
+
+            }
+    
+        }
+    }
+
+}   
+@media only screen and (min-width: 993px) {
+
+    .s-hero-cftv {
+    
+        .container-pg {
+    
+            .main-text-s-hero-cftv {
+    
+                h1 {
+    
+                    max-width: 76.7rem;
+
+                }
+    
+                p {
+                    
+                    max-width: 53.7rem;
+    
+                }
+    
+            }
+    
+        }
+    
+    }
+
+    .s-diferenciais-cftv {
+
+        .container-pg {
+    
+            .main-text-top-diferenciais {
+    
+                max-width: 70.1rem;
+
+            }
+    
+            .title-diferenciais {
+    
+                max-width: 49.9rem;
+    
+            }
+    
+            .sec-text-bottom-diferenciais {
+
+                max-width: 63.5rem;
+                @include margin(4.8rem 0 0 auto);
+
+            }
+        }
+    }
+
+    .s-contato-cftv {
+    
+        .container-pg {
+    
+            .card-contato-cftv {
+                
+                max-width: 43.4rem;
+    
+            }  
+    
+        }
+    
+    }
+}

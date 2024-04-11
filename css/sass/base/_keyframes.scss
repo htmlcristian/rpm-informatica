@@ -24,3 +24,29 @@
 		transform: translatey(0px);
 	}
 }
+
+@keyframes flipfan1 {
+
+	from {
+
+		transform: rotate(0);
+
+	}
+
+	to {
+
+		transform: translate3d(50%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(12deg) skew(0deg, 0deg);
+
+	}
+
+}
+
+@keyframes flipfan2 {
+
+	to {
+
+		transform: translate3d(-50%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-12deg) skew(0deg, 0deg);
+
+	}
+
+}

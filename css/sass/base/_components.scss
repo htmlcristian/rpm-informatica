@@ -69,8 +69,8 @@
 
   .down-arrow {
     position: absolute;
-    top: calc(100vh - 100px);
-    left: calc(50% - 14px);
+    top: calc(100vh - 45px);
+    left: calc(50% - 21px);
     animation: jumpInfinite 1.5s infinite;
   }
 
@@ -84,6 +84,7 @@
   }
 
 }
+
 
 .green-pagination {
 

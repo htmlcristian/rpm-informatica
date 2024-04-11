@@ -483,6 +483,7 @@
     @include padding-top(10.4rem);
     background: url('../../../imgs/home/bg-s-suporte-home.png') no-repeat top center/cover var(--Blue-Light);
 
+
     .container-pg {
 
         .main-top-suporte-div {
@@ -683,25 +684,29 @@
 
                 }
 
-                .cartao-credito {
-
-                    z-index: 3;
-                    position: absolute;
-                    bottom: 8px;
-                    right: 45px;
-                    transition: transform 0.3s ease;
-
-
-                }
-
                 .cupom-fiscal {
 
                     z-index: 3;
                     position: absolute;
-                    bottom: 8px;
-                    left: 45px;
-                    transition: transform 0.3s ease;
-                    
+                    bottom: 70px;
+                    right: 115px;
+                    animation: flipfan1 2.5s ease;
+                    animation-timeline: view();
+                    animation-range: cover -10%;
+
+
+                }
+
+                .cartao-credito {
+
+
+                    z-index: 3;
+                    position: absolute;
+                    bottom: 25px;
+                    left: 135px;
+                    animation: flipfan2 2.5s ease;
+                    animation-timeline: view();
+                    animation-range: cover -10%;
 
                 }
 
@@ -717,14 +722,6 @@
 
         }
 
-        // .swiper-wrapper .swiper-slide {
-
-        //     width: 200px;
-        //     height: 200px;
-        //     background-color: #1F447A;
-            
-
-        // }
         .footer-suporte-div {
 
             h2 {
@@ -813,6 +810,60 @@
                     }
     
                 }
+
+                .images-cards-fan {
+
+                    width: 100%;
+                    max-width: 54.2rem;
+                    position: relative;
+                    @include margin-bottom(16rem);
+    
+                    .cel-mockup {
+    
+                        max-width: 50%;
+                        margin: 0 auto;
+                        position: relative;
+                        z-index: 4;
+    
+                    }
+    
+                    .cupom-fiscal {
+    
+                        max-width: 50%;
+                        z-index: 3;
+                        position: absolute;
+                        bottom: 67px;
+                        right: 130px;
+                        animation: flipfan1 .1s ease;
+                        animation-timeline: view();
+                        animation-range: cover -10%;
+    
+    
+                    }
+    
+                    .cartao-credito {
+    
+    
+                        max-width: 50%;
+                        z-index: 3;
+                        position: absolute;
+                        bottom: 25px;
+                        left: 129px;
+                        animation: flipfan2 .1s ease;
+                        animation-timeline: view();
+                        animation-range: cover -10%;
+    
+                    }
+    
+                    .images-cards-fan.active .cartao-credito {
+                        transform: rotate(33deg);
+                    }
+                      
+                      .images-cards-fan.active .cupom-fiscal {
+                        transform: rotate(-33deg);
+                    }
+    
+                }
     
             }
 
@@ -830,9 +881,9 @@
     }
 
 }
-// @include font-size();
-// @include rfs();
-@media (min-width: 578px) and (max-width: 768px) {
+
+@media only screen and (min-width: 578px) and (max-width: 768px) {
+
     .middle-main-suporte-div {
         display: flex;
         flex-direction: row-reverse;
@@ -846,9 +897,67 @@
         }
 
     }
+
+    .s-suporte {
+
+        .container-pg {
+
+            .middle-main-suporte-div {
+
+                .images-cards-fan {
+
+                    width: 100%;
+                    max-width: 54.2rem;
+                    position: relative;
+                    @include margin-bottom(16rem);
+    
+                    .cel-mockup {
+    
+                        max-width: 50%;
+                        margin: 0 auto;
+                        position: relative;
+                        z-index: 4;
+    
+                    }
+    
+                    .cupom-fiscal {
+    
+                        max-width: 50%;
+                        z-index: 3;
+                        position: absolute;
+                        bottom: 67px;
+                        right: 130px;
+                        animation: flipfan1 .1s ease;
+                        animation-timeline: view();
+                        animation-range: cover -10%;
+    
+    
+                    }
+    
+                    .cartao-credito {
+    
+    
+                        max-width: 50%;
+                        z-index: 3;
+                        position: absolute;
+                        bottom: 25px;
+                        left: 129px;
+                        animation: flipfan2 .1s ease;
+                        animation-timeline: view();
+                        animation-range: cover -10%;
+    
+                    }
+    
+                }
+    
+            }
+
+        }
+
+    }
+
 }
 
-// Mobile 
 @media (max-width: 768px) {
 
     .s-suporte {
@@ -971,6 +1080,73 @@
     }
 
 }
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .s-suporte {
+
+        .container-pg {
+
+            .middle-main-suporte-div {
+
+                .images-cards-fan {
+
+                    width: 100%;
+                    max-width: 54.2rem;
+                    position: relative;
+                    @include margin-bottom(16rem);
+    
+                    .cel-mockup {
+    
+                        max-width: 57%;
+                        margin: 0 auto;
+                        position: relative;
+                        z-index: 4;
+    
+                    }
+    
+                    .cupom-fiscal {
+    
+                        max-width: 57%;
+                        z-index: 3;
+                        position: absolute;
+                        bottom: 70px;
+                        right: 78px;
+                        animation: flipfan1 .1s ease;
+                        animation-timeline: view();
+                        animation-range: cover -10%;
+    
+    
+                    }
+    
+                    .cartao-credito {
+    
+    
+                        max-width: 57%;
+                        z-index: 3;
+                        position: absolute;
+                        bottom: 25px;
+                        left: 81px;
+                        animation: flipfan2 .1s ease;
+                        animation-timeline: view();
+                        animation-range: cover -10%;
+    
+                    }
+    
+                }
+    
+            }
+
+        }
+
+    }
+
+
+}
+// @include font-size();
+// @include rfs();
+// Mobile 
+
 
 @media (min-width: 769px) {
 
