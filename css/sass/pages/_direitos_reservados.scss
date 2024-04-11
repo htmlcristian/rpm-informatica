@@ -1,0 +1,59 @@
+
+.s-hero-politicas {
+
+    @include padding(32.7rem 0 40rem 0);
+    background-image: url('../../../imgs/bg-s-hero-politicas.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .container-pg {
+
+        h1 {
+
+            margin: 0 auto;
+            text-align: center;
+            color: var(--White);
+            text-align: center;
+            font-family: "Rubik Mono One";
+            font-size: 40px;
+            line-height: 40px;
+            letter-spacing: -2.8px;
+
+        }
+
+    }
+
+}
+
+.s-politicas {
+ 
+    @include margin(8rem auto 8rem auto);
+    
+    h2 {
+
+        strong {
+
+            color: var(--Dark-Blue);
+            font-family: 'Roboto', sans-serif;
+            @include font-size(2.4rem);
+            @include rfs(900, font-weight);
+            @include rfs(140%, line-height);
+
+        }
+
+    }
+
+    .accordion-collapse {
+
+        p {
+
+            color: var(--Dark-Blue);
+            font-family: 'Roboto', sans-serif;
+            @include font-size(1.8rem);
+            @include rfs(140%, line-height);
+
+        }
+
+    }
+}
