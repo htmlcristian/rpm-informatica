@@ -344,6 +344,14 @@
                     @include rfs(2.4rem, line-height);
 
                 }
+                
+                .sticky-lg-top {
+
+                    position: sticky;
+                    top: 125px;
+                    z-index: 1020;
+                    
+                }
 
             }
 

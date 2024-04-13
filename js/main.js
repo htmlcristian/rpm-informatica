@@ -118,7 +118,7 @@ var swiperVantagensArc = new Swiper(".vantagens-acr", {
   }
 });
 
-var swiper = new Swiper(".control-dados", {
+var swiperControleDeDados = new Swiper(".control-dados", {
   slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
@@ -133,6 +133,33 @@ var swiper = new Swiper(".control-dados", {
     768: {
       slidesPerView: 2.5,
       spaceBetween: 8,
+    },
+    993: {
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+      enable: false,
+      loop: false,
+      autoplay: false,
+      allowTouchMove: false,
+    },
+  }
+});
+
+var swiperTiposSuporte = new Swiper(".tipos-suporte-slide", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".tipos-suporte-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    375: {
+      slidesPerView: 1.2,
+      spaceBetween: 12,
+    },
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 12,
     },
     993: {
       slidesPerView: 'auto',
