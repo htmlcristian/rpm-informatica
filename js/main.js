@@ -171,3 +171,53 @@ var swiperTiposSuporte = new Swiper(".tipos-suporte-slide", {
     },
   }
 });
+
+var swiperFortinet = new Swiper(".fortinet-carousel", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".pagination-carousel-fortinet",
+    clickable: true,
+  },
+  breakpoints: {
+    375: {
+      slidesPerView: 2.5,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 3.5,
+      spaceBetween: 0,
+    },
+    993: {
+      slidesPerView: 5.7,
+      spaceBetween: 0,
+    },
+  }
+});
+
+var swiperVantagensFortinet = new Swiper(".list-vantagens-fortinet", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".pagination-lista-vantagens-fortinet",
+    clickable: true,
+  },
+  breakpoints: {
+    375: {
+      slidesPerView: 1.2,
+      spaceBetween: 12,
+    },
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 12,
+    },
+    993: {
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+      enable: false,
+      loop: false,
+      autoplay: false,
+      allowTouchMove: false,
+    },
+  }
+});
