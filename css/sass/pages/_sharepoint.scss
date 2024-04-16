@@ -1,0 +1,1034 @@
+.s-hero-sharepoint {
+
+    @include padding(20rem 0 20rem 0);
+    background-image: url('../../../imgs/sharepoint/bg-s-hero-sharepoint.png');
+    background-color: var(--Dark-Blue);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 48%;
+
+    .container-pg {
+
+        .main-text-hero-sharepoint {
+
+            h1 {
+
+                color: var(--White);
+                font-family: "Rubik Mono One", sans-serif;
+                @include font-size(4rem);
+                @include rfs(4rem, line-height);
+                @include rfs(-0.04rem, letter-spacing);
+                @include margin-bottom(32px);
+
+            }
+
+            p {
+
+                color: var(--White);
+                @include font-size(1.8rem);
+                @include rfs(3.2rem, line-height);
+
+            }
+
+        }
+
+    }
+
+}
+
+.s-oque-sharepoint {
+
+    @include padding(8rem 0 24rem 0);
+    background-image: url('../../../imgs/sharepoint/bg-oque-sharepoint.png');
+    background-repeat: no-repeat;
+    background-size: 99%;
+    background-color: var(--Blue-Light);
+
+    .container-pg {
+
+        .top-div-oque-sharepoint {
+
+            @include margin-bottom(9.6rem);
+
+            .left-text-top-sharepoint {
+
+                h2 {
+
+                    color: var(--Blue-Primary);
+                    font-family: "Rubik Mono One", sans-serif;
+
+                    @include font-size(3.2rem);
+                    @include rfs(3.2rem, line-height);
+                    @include rfs(-0.032rem, letter-spacing);
+                    @include margin-bottom(4rem);
+
+                }
+
+                p {
+
+                    color: var(--Dark-Blue);
+                    @include font-size(1.8rem);
+                    @include rfs(3.2rem, line-height);
+
+                }
+
+            }
+
+            .right-text-top-sharepoint {
+
+                img {
+
+                    @include margin-bottom(4.8rem);
+
+                }
+
+                p {
+
+                    color: var(--Blue-Primary);
+                    @include font-size(2.4rem);
+                    @include rfs(4rem, line-height);
+
+                }
+
+            }
+
+        }
+
+        .title-aplicacoes-sharepoint {
+
+            h2 {
+
+                color: var(--Blue-Primary);
+                font-family: "Rubik Mono One", sans-serif;
+                @include font-size(3.2rem);
+                @include rfs(4rem, line-height);
+                @include rfs(-0.032rem, letter-spacing);
+
+            }
+
+        }
+
+        .bot-div-oque-sharepoint {
+
+            .grid-aplicacoes-sharepoint {
+
+                .row {
+
+                    @include rfs(3.2rem, gap);
+
+                    .col-12.col-md-4 {
+
+                        @include padding(2.4rem);
+                        border-radius: 4px;
+                        background: var(--White);
+                        box-shadow: 0px 0px 40px 0px rgba(31, 68, 122, 0.08);
+
+                        p {
+
+                            color: var(--Dark-Blue);
+                            @include font-size(2rem);
+                            @include rfs(3.2rem, line-height);
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.s-beneficios-sharepoint {
+
+    @include padding(8rem 0 8rem);
+    background-color: var(--Dark-Blue);
+
+    .container-pg {
+
+        .global-div-beneficios-sharepoint {
+
+            .text-title-quais-left {
+
+                h2 {
+
+                    color: var(--Green-Tertiary);
+                    font-family: "Rubik Mono One", sans-serif;
+                    @include font-size(4.8rem);
+                    @include rfs(5.6rem, line-height);
+                    @include rfs(-0.048rem, letter-spacing);
+
+                    &::after {
+
+                        content: '';
+                        display: block;
+                        border-bottom: 1px solid var(--Green-Tertiary);
+                        @include margin(1.6rem 0 4rem)
+                    }
+
+                }
+
+                p {
+
+                    color: var(--White);
+                    @include font-size(1.8rem);
+                    @include rfs(3.2rem, line-height);
+
+                }
+
+            }
+
+            .list-quais-right {
+
+                .swiper.beneficios-sharepoint {
+
+
+                    .swiper-wrapper {
+
+                        .swiper-slide {
+
+                            @include padding(4rem 3.2rem);
+                            background-color: var(--Blue-Primary);
+                            border-radius: 4px;
+
+                            p {
+
+                                color: var(--White);
+                                @include font-size(1.8rem);
+                                @include rfs(3.2rem, line-height);
+
+                            }
+
+                        }
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+.s-principais-funcionalidades-sharepoint {
+
+    @include padding(8rem 0 8rem);
+    background-color: var(--Blue-Light);
+    overflow: hidden;
+
+    .container-pg {
+
+        h2 {
+
+            color: var(--Blue-Primary);
+            font-family: "Rubik Mono One", sans-serif;
+            @include font-size(3.2rem);
+            @include rfs(4rem, line-height);
+            @include rfs(-0.032rem, letter-spacing);
+
+        }
+
+        .princp-total-div {
+
+            @include padding-top(4rem);
+
+            .text-left-funcionalidades {
+
+                p {
+
+                    color: var(--Dark-Blue);
+                    @include font-size(1.8rem);
+                    @include rfs(3.2rem, line-height);
+
+                }
+
+            }
+
+            .text-right-funcionalidades {
+
+                h4 {
+
+                    color: var(--Blue-Primary);
+                    font-family: 'Roboto', sans-serif;
+                    @include font-size(2.4rem);
+                    @include rfs(140%, line-height);
+                    @include rfs(700, font-weight);
+                    @include margin-bottom(1.4rem);
+
+                }
+
+                p {
+
+                    color: var(--Dark-Blue);
+                    @include font-size(1.6rem);
+                    @include rfs(2.4rem, line-height);
+                    @include padding(16px 0.8rem);
+
+                    &:not(:last-child) {
+
+                        border-bottom: 1px solid var(--Blue-Secondary);
+
+                    }
+
+                }
+
+
+            }
+
+        }
+    }
+
+}
+
+.s-sharepoint-seguro {
+
+    @include padding(8rem 0 8rem);
+
+
+    .container-pg {
+
+        .total-sharepoint-seguro {
+
+
+            .left-text-seguro-sharepoint {
+
+                h2 {
+
+                    color: var(--Blue-Primary);
+                    font-family: "Rubik Mono One", sans-serif;
+                    @include font-size(3.2rem);
+                    @include rfs(4rem, line-height);
+                    @include rfs(-0.032rem, letter-spacing);
+                    @include margin-bottom(4rem);
+
+                }
+
+
+                p {
+
+                    color: var(--Dark-Blue);
+                    @include font-size(1.8rem);
+                    @include rfs(3.2rem, line-height);
+
+                }
+            }
+
+        }
+
+    }
+
+}
+
+.s-sharepoint-online {
+
+    @include padding(8rem 0 10rem);
+    background-color: var(--Blue-Light);
+
+    .container-pg {
+
+        h2 {
+
+            color: var(--Blue-Primary);
+            font-family: "Rubik Mono One", sans-serif;
+            @include font-size(3.2rem);
+            @include rfs(4rem, line-height);
+            @include rfs(-0.032rem, letter-spacing);
+
+        }
+
+
+        .total-sharepoint-online {
+
+            @include margin-top(4rem);
+
+            p {
+
+                color: var(--Dark-Blue);
+                @include font-size(1.8rem);
+                @include rfs(3.2rem, line-height);
+
+            }
+
+            .right-text-online-sharepoint {
+
+                h4 {
+
+                    color: var(--Blue-Primary);
+                    @include font-size(2.4rem);
+                    @include rfs(140%, line-height);
+                    @include rfs(700, font-weight);
+
+                }
+
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (min-width: 0px) and (max-width: 429px) {
+
+    .s-beneficios-sharepoint {
+
+        .container-pg {
+
+            .global-div-beneficios-sharepoint {
+
+                .list-quais-right {
+
+                    .swiper.beneficios-sharepoint {
+
+                        .swiper-wrapper {
+
+                            .swiper-slide {
+
+                                min-height: 47.8rem;
+
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .s-hero-sharepoint {
+
+        padding: 10.8rem 0 39rem 0;
+        background-size: 80%;
+
+    }
+
+    .s-oque-sharepoint {
+
+        background-image: url('../../../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .container-pg {
+
+            .top-div-oque-sharepoint {
+
+
+                .left-text-top-sharepoint {
+
+                    margin-bottom: 3.2rem;
+
+                }
+
+            }
+
+            .bot-div-oque-sharepoint {
+
+                .grid-aplicacoes-sharepoint {
+
+                    .row {
+
+                        gap: 1.5rem;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 430px) and (max-width: 576px) {
+
+    .s-hero-sharepoint {
+
+        padding: 10.8rem 0 39rem 0;
+        background-size: 80%;
+
+    }
+
+    .s-oque-sharepoint {
+
+        background-image: url('../../../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .container-pg {
+
+            .top-div-oque-sharepoint {
+
+
+                .left-text-top-sharepoint {
+
+                    margin-bottom: 3.2rem;
+
+                }
+
+            }
+
+            .bot-div-oque-sharepoint {
+
+                .grid-aplicacoes-sharepoint {
+
+                    .row {
+
+                        gap: 1.5rem;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .s-beneficios-sharepoint {
+
+        .container-pg {
+
+            .global-div-beneficios-sharepoint {
+
+                .list-quais-right {
+
+                    @include margin-top(4rem);
+
+                    .swiper.beneficios-sharepoint {
+
+                        .swiper-wrapper {
+
+                            .swiper-slide {
+
+                                min-height: 39rem;
+
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    .s-hero-sharepoint {
+
+        padding: 10.8rem 0 43.1rem 0;
+        background-size: 65%;
+
+    }
+
+    .s-oque-sharepoint {
+
+        background-image: url('../../../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .container-pg {
+
+            .top-div-oque-sharepoint {
+
+
+                .left-text-top-sharepoint {
+
+                    margin-bottom: 3.2rem;
+
+                }
+
+            }
+
+            .bot-div-oque-sharepoint {
+
+                .grid-aplicacoes-sharepoint {
+
+                    .row {
+
+                        gap: 1.5rem;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .s-beneficios-sharepoint {
+
+        .container-pg {
+
+            .global-div-beneficios-sharepoint {
+
+                .list-quais-right {
+
+                    @include margin-top(4rem);
+
+                    .swiper.beneficios-sharepoint {
+
+                        .swiper-wrapper {
+
+                            .swiper-slide {
+
+                                min-height: 39rem;
+
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .s-hero-sharepoint {
+
+        padding: 10.8rem 0 43.1rem 0;
+        background-size: 55%;
+
+    }
+
+    .s-oque-sharepoint {
+
+        background-image: url('../../../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .container-pg {
+
+            .top-div-oque-sharepoint {
+
+
+                .left-text-top-sharepoint {
+
+                    margin-bottom: 3.2rem;
+
+                }
+
+            }
+
+            .title-aplicacoes-sharepoint {
+
+                margin-bottom: 3.2rem;
+
+            }
+
+            .bot-div-oque-sharepoint {
+
+                .grid-aplicacoes-sharepoint {
+
+                    .row {
+
+                        gap: 1.5rem;
+                        justify-content: center;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .s-beneficios-sharepoint {
+
+        .container-pg {
+
+            .global-div-beneficios-sharepoint {
+
+                .list-quais-right {
+
+                    @include margin-top(4rem);
+
+                    .swiper.beneficios-sharepoint {
+
+                        .swiper-wrapper {
+
+                            .swiper-slide {
+
+                                min-height: 45rem;
+
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 993px) {
+
+    .s-hero-sharepoint {
+
+        .container-pg {
+
+            display: flex;
+            flex-direction: row-reverse;
+
+            .main-text-hero-sharepoint {
+
+                max-width: 34.6rem;
+                @include margin-right(12rem);
+
+            }
+
+        }
+
+    }
+
+    .s-oque-sharepoint {
+
+        .container-pg {
+
+            .top-div-oque-sharepoint {
+
+                display: flex;
+                justify-content: space-between;
+
+                .left-text-top-sharepoint {
+
+                    h2 {
+
+                        max-width: 30rem;
+
+                    }
+
+                    max-width: 54rem;
+
+                }
+
+                .right-text-top-sharepoint {
+
+                    max-width: 44.4rem;
+
+                }
+
+            }
+
+            .title-aplicacoes-sharepoint {
+
+                max-width: 49.7rem;
+                margin-bottom: -12.5rem;
+
+            }
+
+            .bot-div-oque-sharepoint {
+
+                display: flex;
+                flex-direction: row-reverse;
+
+                .grid-aplicacoes-sharepoint {
+
+                    max-width: 73rem;
+
+                    .col-12.col-md-4 {
+
+                        max-width: 22.3rem;
+
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .s-beneficios-sharepoint {
+
+        .container-pg {
+
+            .global-div-beneficios-sharepoint {
+
+                display: flex;
+                justify-content: space-between;
+
+                .text-title-quais-left {
+
+                    max-width: 48.8rem;
+
+                    p {
+
+                        max-width: 46.9rem;
+
+                    }
+
+                }
+
+                .list-quais-right {
+
+                    max-width: 54rem;
+
+                    .swiper.beneficios-sharepoint {
+
+                        .pagination-beneficios-sharepoint {
+
+                            display: none;
+
+                        }
+
+                        .swiper-wrapper {
+
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2.4rem;
+
+                            .swiper-slide {
+
+                                min-height: 36.8rem;
+
+                            }
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .s-principais-funcionalidades-sharepoint {
+
+    
+        .container-pg {
+    
+            h2 {
+    
+                max-width: 49.7rem;
+    
+            }
+    
+            .princp-total-div {
+    
+                .text-left-funcionalidades {
+    
+                    max-width: 44.4rem;
+    
+                }
+    
+                .text-right-funcionalidades {
+    
+                    max-width: 54rem;
+    
+                }
+    
+            }
+        }
+    
+    }
+
+    .s-sharepoint-seguro {
+
+        @include padding(8rem 0 8rem);
+    
+    
+        .container-pg {
+    
+            .total-sharepoint-seguro {
+    
+    
+                .left-text-seguro-sharepoint {
+
+                    h2 {
+
+                        max-width: 36.7rem;
+
+                    }
+
+                    max-width: 53.9rem;
+
+                }
+    
+            }
+    
+        }
+    
+    }
+
+    .s-sharepoint-online {
+
+        .container-pg {
+    
+            h2 {
+    
+                max-width: 49.7rem;
+    
+            }
+    
+    
+            .total-sharepoint-online {
+    
+    
+                .left-text-online-sharepoint {
+    
+                    max-width: 53.9rem;
+    
+                }
+    
+                .right-text-online-sharepoint {
+    
+                    max-width: 53.9rem;
+    
+                }
+    
+            }
+        }
+    
+    }
+}
+
+
+
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+    .s-oque-sharepoint {
+
+        background-image: url('../../../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .s-oque-sharepoint {
+
+        .container-pg {
+
+            .title-aplicacoes-sharepoint {
+
+                margin-bottom: -16.5rem;
+
+                h2 {
+
+                    font-size: 3.2rem;
+
+
+                }
+
+            }
+
+        }
+
+    }
+
+    .s-sharepoint-online {
+
+        .container-pg {
+    
+            h2 {
+    
+                max-width: 82.7rem;
+    
+            }
+    
+    
+            .total-sharepoint-online {
+    
+                .left-text-online-sharepoint {
+    
+                    max-width: 36.9rem;
+    
+                }
+    
+                .right-text-online-sharepoint {
+    
+                    max-width: 50.9rem;
+    
+                }
+    
+            }
+        }
+    
+    }
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1105px) {
+    
+    .s-beneficios-sharepoint {
+
+        .container-pg {
+
+            .global-div-beneficios-sharepoint {
+
+                display: flex;
+                justify-content: space-between;
+
+                .text-title-quais-left {
+
+                    h2 {
+
+                        font-size: 4.4rem;
+
+                    }
+
+                    p {
+
+                        font-size: 1.6rem;
+
+                    }
+
+                }
+
+                .list-quais-right {
+
+                    max-width: 49rem;
+
+                    p {
+
+                        font-size: 1.7rem;
+
+                    }
+
+                }
+
+            }
+
+        }
+
+    }
+
+}

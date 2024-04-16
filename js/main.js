@@ -22,7 +22,7 @@ var swiperEstruturaNegocios = new Swiper(".list-estrutura", {
     },
     // Breakpoint options to disable Swiper on desktop
     breakpoints: {
-      375: {
+      320: {
         slidesPerView: 1.5,
         spaceBetween: 20,
       },
@@ -46,7 +46,7 @@ var swiperMarcas = new Swiper(".slide-marcas", {
       clickable: true,
     },
     breakpoints: {
-        375: {
+        320: {
           slidesPerView: 2.5,
           spaceBetween: 40,
         },
@@ -72,7 +72,7 @@ var swiperTopicos = new Swiper(".topicos-slide", {
     clickable: true,
   },
   breakpoints: {
-    375: {
+    320: {
       slidesPerView: 1.2,
       spaceBetween: 8,
     },
@@ -99,7 +99,7 @@ var swiperVantagensArc = new Swiper(".vantagens-acr", {
     clickable: true,
   },
   breakpoints: {
-    375: {
+    320: {
       slidesPerView: 1.2,
       spaceBetween: 8,
     },
@@ -126,7 +126,7 @@ var swiperControleDeDados = new Swiper(".control-dados", {
     clickable: true,
   },
   breakpoints: {
-    375: {
+    320: {
       slidesPerView: 1.2,
       spaceBetween: 8,
     },
@@ -153,7 +153,7 @@ var swiperTiposSuporte = new Swiper(".tipos-suporte-slide", {
     clickable: true,
   },
   breakpoints: {
-    375: {
+    320: {
       slidesPerView: 1.2,
       spaceBetween: 12,
     },
@@ -180,7 +180,7 @@ var swiperFortinet = new Swiper(".fortinet-carousel", {
     clickable: true,
   },
   breakpoints: {
-    375: {
+    320: {
       slidesPerView: 2.5,
       spaceBetween: 10,
     },
@@ -203,7 +203,34 @@ var swiperVantagensFortinet = new Swiper(".list-vantagens-fortinet", {
     clickable: true,
   },
   breakpoints: {
-    375: {
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 12,
+    },
+    768: {
+      slidesPerView: 1.5,
+      spaceBetween: 12,
+    },
+    993: {
+      slidesPerView: 'auto',
+      spaceBetween: 0,
+      enable: false,
+      loop: false,
+      autoplay: false,
+      allowTouchMove: false,
+    },
+  }
+});
+
+var swiperBeneficiosSharepoint = new Swiper(".beneficios-sharepoint", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".pagination-beneficios-sharepoint",
+    clickable: true,
+  },
+  breakpoints: {
+    320: {
       slidesPerView: 1.2,
       spaceBetween: 12,
     },
