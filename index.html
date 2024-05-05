@@ -32,7 +32,7 @@
                   </div>
                   <div class="contact-item">
                       <img src="./imgs/icon-whatsapp-adress.svg" alt="">
-                      <a class="sm-contact text-sm" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832 </a>
+                      <a class="sm-contact text-sm" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832 </a>
                   </div>
                   <div class="contact-item">
                       <img src="./imgs/icon-message-white.svg" alt="">
@@ -75,22 +75,25 @@
                     PROMOÇÕES
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="./html/promocoes.html#promocional-item1">HD SSD</a></li>
-                    <li><a class="dropdown-item" href="./html/promocoes.html#promocional-item2">HD SSD</a></li>
-                    <li><a class="dropdown-item" href="./html/promocoes.html#promocional-item3">HD SSD</a></li>
-                    <li><a class="dropdown-item" href="./html/promocoes.html#promocional-item4">HD SSD</a></li>
+                    <li><a class="dropdown-item" href="./html/promocoes.html">HD SSD</a></li>
+                    <li><a class="dropdown-item" href="./html/promocoes.html">HD SSD</a></li>
+                    <li><a class="dropdown-item" href="./html/promocoes.html">HD SSD</a></li>
+                    <li><a class="dropdown-item" href="./html/promocoes.html">HD SSD</a></li>
                   </ul>
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#">CONTATO</a>
+                  <a class="nav-link" aria-current="page" href="javascript:void(0);" onclick="redirecionarParaFinal()">CONTATO</a>
                 </li>
 
               </ul>
 
               <div class="row endereco-btn-mobile mt-10">
+                <!-- onclick="redirecionarParaFinal()" -->
                   <div class="col d-flex justify-content-center align-items-center">
-                    <button class="btn-primary">Conheça Nossa Loja</button>
+                    <a href="https://loja.rpminformatica.com" target="_blank" rel="noopener noreferrer">
+                      <button class="btn-primary">Conheça Nossa Loja</button>
+                    </a>
                   </div>
 
                 <div class="contact-section mobile1 d-lg-none mt-3">
@@ -102,7 +105,7 @@
                               </div>
                               <div class="col-6 contact-item d-flex justify-content-start align-items-center">
                                   <img src="./imgs/icon-whatsapp.svg" alt="">
-                                  <a class="sm-contact text-sm" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
+                                  <a class="sm-contact text-sm" target="_blank" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
                               </div>
                           
                           <div class="row">
@@ -288,8 +291,11 @@
           <div class="text-support">
             <h2>suporte para a sua empresa não parar</h2>
             <p>Possuímos uma equipe de suporte de TI especializada e 100% dedicada em ajudar empresas na busca de soluções que tenham como objetivo ajudar sua a empresa a alcançar melhores resultados.</p>
-            <button class="btn-secondary">Tenha mais detalhes</button>
+            <a href="./html/suporte.html" target="_blank" rel="noopener noreferrer">
+              <button class="btn-secondary">Tenha mais detalhes</button>
+            </a>
           </div>
+          
           <div class="div-tab-right">
             <div class="scroll-person">
               <nav>
@@ -324,7 +330,9 @@
                         <li>Rede em nuvem</li>
                         <li>Firewall de acesso a servidores em nuvem</li>
                     </ul>
-                    <button class="btn-primary">saiba mais</button>
+                    <a href="./html/suporte.html#suporte-nuvem" target="_blank" rel="noopener noreferrer">
+                      <button class="btn-primary">saiba mais</button>
+                    </a>
                 </div>
               </div>
               <div class="tab-pane fade" id="nav-servidores" role="tabpanel" aria-labelledby="nav-servidores-tab">
@@ -335,7 +343,9 @@
                         <li>Backup</li>
                         <li>Virtualização de servidores</li>
                     </ul>
-                    <button class="btn-primary">saiba mais</button>
+                    <a href="./html/suporte.html#suporte-servidores" target="_blank" rel="noopener noreferrer">
+                      <button class="btn-primary">saiba mais</button>
+                    </a>
                 </div>
               </div>
               <div class="tab-pane fade" id="nav-redes" role="tabpanel" aria-labelledby="nav-redes-tab">
@@ -346,7 +356,9 @@
                         <li>Soluções de backup em Rede</li>
                         <li>Configurações de segurança</li>
                     </ul>
-                    <button class="btn-primary">saiba mais</button>
+                    <a href="./html/suporte.html#suporte-redes" target="_blank" rel="noopener noreferrer">
+                      <button class="btn-primary">saiba mais</button>
+                    </a>
                 </div>
               </div>
               <div class="tab-pane fade" id="nav-sistemas" role="tabpanel" aria-labelledby="nav-sistemas-tab">
@@ -357,7 +369,9 @@
                       <li>Licenciamento de Windows, Office e outros sistemas da Microsoft</li>
                       <li>Monitoramento de sistemas em nuvem</li>
                   </ul>
-                  <button class="btn-primary">saiba mais</button>
+                  <a href="./html/suporte.html#suporte-sistemas" target="_blank" rel="noopener noreferrer">
+                    <button class="btn-primary">saiba mais</button>
+                  </a>
               </div>
               </div>
           </div>
@@ -365,10 +379,12 @@
         </div>
         </div>
         <div class="middle-main-suporte-div">
-          <div class="text-conheca-sup ml-0 ml-md-3 mr-lg-2">
-            <h2 class="text-center text-lg-start">Conheça nossa loja</h2>
-            <p class="text-center text-lg-start">Compre todos os periféricos que você necessita para seu computador.</p>
-            <button class="btn-secondary">acesse aqui</button>
+          <div class="text-conheca-sup ml-0 ml-md-5 mr-lg-2">
+            <h2>Conheça nossa loja</h2>
+            <p>Compre todos os periféricos que você necessita para seu computador.</p>
+            <a href="https://loja.rpminformatica.com/" target="_blank" rel="noopener noreferrer">
+              <button class="btn-secondary">acesse aqui</button>
+            </a>
           </div>
           <div class="images-cards-fan">
             <img class="cel-mockup img-fluid" src="./imgs/home/phone.svg" alt="">
@@ -454,7 +470,7 @@
               </div>
               <div class="contact-item-footer">
                 <img src="./imgs/icon-whatsapp.svg" alt="">
-                <a href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
+                <a target="_blank" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
               </div>
               <div class="contact-item-footer">
                 <img src="./imgs/icon-message-header-mobile.svg" alt="">
@@ -462,13 +478,19 @@
               </div>
               <div class="contact-item-footer">
                 <img src="./imgs/icon-location.svg" alt="">
-                <a href="">Rua Santa Mariana n° 351 <br> Sala 201- Higienópolis RJ</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://maps.app.goo.gl/KhCTKZzfjbPYDEk58">Rua Santa Mariana n° 351 <br> Sala 201- Higienópolis RJ</a>
               </div>
               <div class="social-item-footer">
-                <img src="./imgs/icon-facebook.svg" alt="">
-                <img src="./imgs/icon-instagram.svg" alt="">
-                <img src="./imgs/icon-youtube.svg" alt="">
-            </div>
+                <a href="https://www.facebook.com/rpminf" target="_blank" rel="noopener noreferrer">
+                  <img src="../imgs/icon-facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/rpminformatica_" target="_blank" rel="noopener noreferrer">
+                  <img src="../imgs/icon-instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@rpminformatica" target="_blank" rel="noopener noreferrer">
+                  <img src="./imgs/icon-youtube.svg" alt="YouTube">
+                </a>
+              </div>
             </div>
           </div>
 

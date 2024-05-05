@@ -1,6 +1,6 @@
 .s-hero-alarme {
 
-    background-image: url('../../../imgs/alarme/bg-s-hero-alarme.png');
+    background-image: url('../imgs/alarme/bg-s-hero-alarme.png');
     background-position: left center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@
 
 .s-instalacao-alarme {
 
-    background-image: url('../../../imgs/alarme/bg-instalacao-arma.png');
+    background-image: url('../imgs/alarme/bg-instalacao-arma.png');
     background-color: var(--Blue-Light);
     background-repeat: no-repeat;
     background-size: cover;
@@ -557,5 +557,16 @@
         }
     }
 
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+    .s-hero-alarme {
+
+        padding: 20rem 0 27.2rem 0;
+
+    }
 
 }

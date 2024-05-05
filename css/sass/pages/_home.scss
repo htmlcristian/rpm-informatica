@@ -3,7 +3,7 @@
     max-width: 100%;
     max-height: 73.6rem;
     background-color: var(--Dark-Teal-Blue);
-    background-image: url('../../../imgs/home/bg-s-hero-home.jpg');
+    background-image: url('../imgs/home/bg-s-hero-home.jpg');
     background-position: right bottom;
     background-size: contain;
     background-repeat: no-repeat;
@@ -55,85 +55,10 @@
     }
 
 }
-@media (max-width: 576px) {
-
-    .s-hero {
-
-        background-position-x: -70rem;
-        background-size: cover;
-        background-repeat: no-repeat;
-        padding-bottom: 2.4rem;
-        height: 100vh;
-        z-index: -2;
-
-    }
-
-    .s-hero::after {
-
-        content: '';
-        display: block;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        background: linear-gradient(1deg, #1F447A 0%, rgba(31, 68, 122, 0.00) 100%);
-        mix-blend-mode: multiply;
-        height: 394px;
-        width: 100vw;
-        z-index: -1;
-
-    }
-
-    .main-text {
-
-        margin-top: 22rem;
-        width: 32.5rem;
-        z-index: 1;
-
-        h1.h1-sm {
-
-            margin-bottom: 0;
-            max-width: 29rem;
-            font-size: 2.4rem;
-
-        }
-
-        h2.h2-sm {
-
-            margin-bottom: 1.6rem;
-            font-size: 1.6rem;
-        }
-
-        p.p-sm {
-
-            width: 100%;
-            font-size: 1.4rem;
-
-            &.hidden {
-
-                display: none;
-
-            }
-        }
-
-    }
-
-}
-
-@media (min-width: 490px) and (max-width: 768px) {
-
-    .s-hero {
-
-        background-position: center center;
-        background-size: cover;
-
-    }
-
-}
 
 .s-servicos {
 
     background-color: var(--Blue-Light);
-    max-height: 102rem;
     padding: 8rem 0 9.9rem;
     overflow: hidden;
 
@@ -246,129 +171,6 @@
     }
     
 }
-@media (max-width: 577px) {
-
-    .s-servicos {
-
-        max-height: 200rem;
-        padding: 3rem 0 3rem;
-
-        .titulo-text {
-
-            p {
-
-                font-size: 1.4rem;
-                margin-top: 1.6rem;
-                width: 36.3rem;
-
-            }
-
-        }
-
-        .servicos-list-with-links {
-
-            max-height: 115.5rem;
-
-            .card-servicos {
-
-                width: 100%;
-                max-width: 39.8rem;
-                height: auto;
-                gap: 2.4rem;
-                display: flex;
-                justify-content: space-between;
-
-                img {
-
-                   height: 8rem;
-                   width: 8rem; 
-
-                }
-
-                .info-card { 
-
-                    width: 26.2rem;
-
-                p {
-
-                    font-size: 1.4rem;
-
-                }
-
-                }
-            }
-        }
-    }
-
-}
-
-@media (min-width: 490px) and (max-width: 768px) {
-
-    .s-servicos {
-
-        padding: 3rem 0 0 3rem;
-        max-height: 175rem;
-
-        .servicos-list-with-links {
-
-
-            .card-servicos {
-
-                max-width: 39.8rem;
-    
-                .info-card { 
-    
-                    width: 23.2rem;
-    
-                    p {
-    
-                    font-size: 1.4rem;
-    
-                    }
-    
-                }
-            }
-
-
-        }
-
-    }
-
-}
-
-@media (min-width: 769px) {
-
-    .s-servicos {
-
-        .container-pg {
-
-            .servicos-list-with-links {
-
-                display: flex;
-                justify-content: space-between;
-
-                .text-projetamos {
-
-                    margin-right: 5.7rem;
-
-                    p {
-                        margin-top: 3rem;
-                        width: 22.8rem;
-                        color: var(--Dark-Blue);
-                        font-size: 1.6rem;
-                        line-height: 2.4rem;
-                    }
-    
-                }
-
-            }
-
-
-        }
-
-    }
-
-}
 
 .s-rpm-motivos {
 
@@ -446,42 +248,12 @@
 
 }
 
-@media (max-width: 577px) {
-
-    .s-rpm-motivos {
-
-        padding: 3.2rem 0 3.2rem;
-
-        .container-pg {
-
-            h2 {
-
-                max-width: 30rem;
-
-            }
-
-            .porque-rpm {
-
-
-                .estatisticas-rpm {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                }
-            }
-
-        }
-
-    }
-
-}
-
 .s-suporte {
 
     width: 100%;
     max-height: 225rem;
     @include padding-top(10.4rem);
-    background: url('../../../imgs/home/bg-s-suporte-home.png') no-repeat top center/cover var(--Blue-Light);
+    background: url('../imgs/home/bg-s-suporte-home.png') no-repeat top center/cover var(--Blue-Light);
 
 
     .container-pg {
@@ -671,28 +443,33 @@
 
             .images-cards-fan {
 
-                width: 100%;
-                max-width: 54.2rem;
                 position: relative;
+                width: 100%;
+                max-width: 55rem;
+                height: 54rem;
                 @include margin-bottom(16rem);
+
+                img {
+
+                    width: 300px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                }
 
                 .cel-mockup {
 
-                    margin: 0 auto;
-                    position: relative;
-                    z-index: 4;
+                    z-index: 3;
 
                 }
 
                 .cupom-fiscal {
 
-                    z-index: 3;
-                    position: absolute;
-                    bottom: 70px;
-                    right: 115px;
-                    animation: flipfan1 2.5s ease;
-                    animation-timeline: view();
-                    animation-range: cover -10%;
+                    z-index: 2;
+                    bottom: 40px;
+                    transform-origin: center;
+                    animation: animeRight 4s infinite;
 
 
                 }
@@ -700,23 +477,13 @@
                 .cartao-credito {
 
 
-                    z-index: 3;
-                    position: absolute;
-                    bottom: 25px;
-                    left: 135px;
-                    animation: flipfan2 2.5s ease;
-                    animation-timeline: view();
-                    animation-range: cover -10%;
+                    z-index: 1;
+                    bottom: 80px;
+                    transform-origin: center;
+                    animation: animeLeft 4s infinite;
 
                 }
 
-                .images-cards-fan.active .cartao-credito {
-                    transform: rotate(33deg);
-                }
-                  
-                  .images-cards-fan.active .cupom-fiscal {
-                    transform: rotate(-33deg);
-                }
 
             }
 
@@ -792,7 +559,358 @@
     }
 
 }
-@media (max-width: 577px) {
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 429px) {
+
+    .s-hero {
+
+        background-position-x: -70rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 2.4rem;
+        height: 100vh;
+        z-index: -2;
+
+        .main-text {
+
+            margin-top: 22rem;
+            width: 32.5rem;
+            z-index: 1;
+    
+            h1.h1-sm {
+    
+                margin-bottom: 0;
+                max-width: 29rem;
+                font-size: 2.4rem;
+    
+            }
+    
+            h2.h2-sm {
+    
+                margin-bottom: 1.6rem;
+                font-size: 1.6rem;
+            }
+    
+            p.p-sm {
+    
+                width: 100%;
+                font-size: 1.4rem;
+    
+                &.hidden {
+    
+                    display: none;
+    
+                }
+            }
+    
+        }
+
+    }
+
+    .s-hero::after {
+
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(1deg, #1F447A 0%, rgba(31, 68, 122, 0.00) 100%);
+        mix-blend-mode: multiply;
+        height: 394px;
+        width: 100vw;
+        z-index: -1;
+
+    }
+
+    .s-servicos {
+
+        max-height: 200rem;
+        padding: 3rem 0 3rem;
+
+        .titulo-text {
+
+            p {
+
+                font-size: 1.4rem;
+                margin-top: 1.6rem;
+                width: 36.3rem;
+
+            }
+
+        }
+
+        .servicos-list-with-links {
+
+            max-height: 115.5rem;
+
+            .card-servicos {
+
+                width: 100%;
+                max-width: 39.8rem;
+                height: auto;
+                gap: 2.4rem;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+
+                   height: 8rem;
+                   width: 8rem; 
+
+                }
+
+                .info-card { 
+
+                    width: 26.2rem;
+
+                p {
+
+                    font-size: 1.4rem;
+
+                }
+
+                }
+            }
+        }
+    }
+
+    .s-rpm-motivos {
+
+        padding: 3.2rem 0 3.2rem;
+
+        .container-pg {
+
+            h2 {
+
+                max-width: 30rem;
+
+            }
+
+            .porque-rpm {
+
+
+                .estatisticas-rpm {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+        }
+
+    }
+
+    .s-suporte {
+
+        .container-pg {
+
+            .middle-main-suporte-div {
+
+                .text-conheca-sup {
+    
+                    h2 {
+
+                        width: 100%;
+                        max-width: 365px;
+                        
+                    }
+
+                    a {
+                        
+                        text-decoration: none;
+
+                    }
+                
+                    margin-bottom: 3.2rem;
+    
+                }
+
+                .images-cards-fan {
+
+                    @include margin-bottom(16rem);
+                    height: 22rem;
+    
+                    .cel-mockup {
+    
+                        max-width: 45%;
+    
+                    }
+    
+                    .cupom-fiscal {
+
+                        max-width: 45%;
+                        bottom: -20px;
+    
+                    }
+    
+                    .cartao-credito {
+    
+                        max-width: 45%;
+                        bottom: -30px;
+
+                    }
+    
+    
+                }
+    
+            }
+
+            .footer-suporte-div {
+    
+                h2 {
+
+                    font-size: 2.2rem;
+
+                }
+            }
+
+        }
+
+    }
+
+}
+@media only screen and (min-width: 430px) and (max-width: 576px) {
+
+    .s-hero {
+
+        background-position-x: -70rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 2.4rem;
+        height: 100vh;
+        z-index: -2;
+
+        .main-text {
+
+            margin-top: 22rem;
+            width: 32.5rem;
+            z-index: 1;
+    
+            h1.h1-sm {
+    
+                margin-bottom: 0;
+                max-width: 29rem;
+                font-size: 2.4rem;
+    
+            }
+    
+            h2.h2-sm {
+    
+                margin-bottom: 1.6rem;
+                font-size: 1.6rem;
+            }
+    
+            p.p-sm {
+    
+                width: 100%;
+                font-size: 1.4rem;
+    
+                &.hidden {
+    
+                    display: none;
+    
+                }
+            }
+    
+        }
+
+    }
+
+    .s-hero::after {
+
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(1deg, #1F447A 0%, rgba(31, 68, 122, 0.00) 100%);
+        mix-blend-mode: multiply;
+        height: 394px;
+        width: 100vw;
+        z-index: -1;
+
+    }
+
+    .s-servicos {
+
+        max-height: 200rem;
+        padding: 3rem 0 3rem;
+
+        .titulo-text {
+
+            p {
+
+                font-size: 1.4rem;
+                margin-top: 1.6rem;
+                width: 36.3rem;
+
+            }
+
+        }
+
+        .servicos-list-with-links {
+
+            max-height: 115.5rem;
+
+            .card-servicos {
+
+                width: 100%;
+                max-width: 39.8rem;
+                height: auto;
+                gap: 2.4rem;
+                display: flex;
+                justify-content: space-between;
+
+                img {
+
+                   height: 8rem;
+                   width: 8rem; 
+
+                }
+
+                .info-card { 
+
+                    width: 26.2rem;
+
+                p {
+
+                    font-size: 1.4rem;
+
+                }
+
+                }
+            }
+        }
+    }
+
+    .s-rpm-motivos {
+
+        padding: 3.2rem 0 3.2rem;
+
+        .container-pg {
+
+            h2 {
+
+                max-width: 30rem;
+
+            }
+
+            .porque-rpm {
+
+
+                .estatisticas-rpm {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+            }
+
+        }
+
+    }
 
     .s-suporte {
 
@@ -813,55 +931,30 @@
 
                 .images-cards-fan {
 
-                    width: 100%;
-                    max-width: 54.2rem;
-                    position: relative;
                     @include margin-bottom(16rem);
+                    height: 28rem;
+                    max-width: 40rem;
     
                     .cel-mockup {
     
-                        max-width: 50%;
-                        margin: 0 auto;
-                        position: relative;
-                        z-index: 4;
+                        max-width: 45%;
     
                     }
     
                     .cupom-fiscal {
-    
-                        max-width: 50%;
-                        z-index: 3;
-                        position: absolute;
-                        bottom: 67px;
-                        right: 117px;
-                        animation: flipfan1 .1s ease;
-                        animation-timeline: view();
-                        animation-range: cover -10%;
-    
+
+                        max-width: 45%;
+                        bottom: -20px;
     
                     }
     
                     .cartao-credito {
     
-    
-                        max-width: 50%;
-                        z-index: 3;
-                        position: absolute;
-                        bottom: 25px;
-                        left: 117px;
-                        animation: flipfan2 .1s ease;
-                        animation-timeline: view();
-                        animation-range: cover -10%;
-    
+                        max-width: 45%;
+                        bottom: -30px;
+
                     }
     
-                    .images-cards-fan.active .cartao-credito {
-                        transform: rotate(33deg);
-                    }
-                      
-                      .images-cards-fan.active .cupom-fiscal {
-                        transform: rotate(-33deg);
-                    }
     
                 }
     
@@ -881,18 +974,40 @@
     }
 
 }
+@media only screen and (min-width: 577px) and (max-width: 768px) {
 
-@media only screen and (min-width: 578px) and (max-width: 768px) {
+    .s-hero {
 
-    .middle-main-suporte-div {
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        justify-content: space-between;
+        background-position: center center;
+        background-size: cover;
 
-        .text-conheca-sup {
+    }
 
-            margin: 0 auto 3.2rem auto;
+    .s-servicos {
+
+        padding: 3rem 0 0 3rem;
+        max-height: 175rem;
+
+        .servicos-list-with-links {
+
+
+            .card-servicos {
+
+                max-width: 39.8rem;
+    
+                .info-card { 
+    
+                    width: 23.2rem;
+    
+                    p {
+    
+                    font-size: 1.4rem;
+    
+                    }
+    
+                }
+            }
+
 
         }
 
@@ -904,49 +1019,42 @@
 
             .middle-main-suporte-div {
 
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: center;
+                justify-content: space-between;
+        
+                .text-conheca-sup {
+        
+                    margin: 0 auto 3.2rem auto;
+        
+                }
+
                 .images-cards-fan {
 
-                    width: 100%;
-                    max-width: 54.2rem;
-                    position: relative;
                     @include margin-bottom(16rem);
+                    height: 42rem;
     
                     .cel-mockup {
     
                         max-width: 50%;
-                        margin: 0 auto;
-                        position: relative;
-                        z-index: 4;
     
                     }
     
                     .cupom-fiscal {
-    
+
                         max-width: 50%;
-                        z-index: 3;
-                        position: absolute;
-                        bottom: 67px;
-                        right: 130px;
-                        animation: flipfan1 .1s ease;
-                        animation-timeline: view();
-                        animation-range: cover -10%;
-    
+                        bottom: -20px;
     
                     }
     
                     .cartao-credito {
     
-    
                         max-width: 50%;
-                        z-index: 3;
-                        position: absolute;
-                        bottom: 25px;
-                        left: 129px;
-                        animation: flipfan2 .1s ease;
-                        animation-timeline: view();
-                        animation-range: cover -10%;
-    
+                        bottom: -30px;
+
                     }
+    
     
                 }
     
@@ -1081,73 +1189,6 @@
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 992px) {
-
-    .s-suporte {
-
-        .container-pg {
-
-            .middle-main-suporte-div {
-
-                .images-cards-fan {
-
-                    width: 100%;
-                    max-width: 54.2rem;
-                    position: relative;
-                    @include margin-bottom(16rem);
-    
-                    .cel-mockup {
-    
-                        max-width: 57%;
-                        margin: 0 auto;
-                        position: relative;
-                        z-index: 4;
-    
-                    }
-    
-                    .cupom-fiscal {
-    
-                        max-width: 57%;
-                        z-index: 3;
-                        position: absolute;
-                        bottom: 70px;
-                        right: 78px;
-                        animation: flipfan1 .1s ease;
-                        animation-timeline: view();
-                        animation-range: cover -10%;
-    
-    
-                    }
-    
-                    .cartao-credito {
-    
-    
-                        max-width: 57%;
-                        z-index: 3;
-                        position: absolute;
-                        bottom: 25px;
-                        left: 81px;
-                        animation: flipfan2 .1s ease;
-                        animation-timeline: view();
-                        animation-range: cover -10%;
-    
-                    }
-    
-                }
-    
-            }
-
-        }
-
-    }
-
-
-}
-// @include font-size();
-// @include rfs();
-// Mobile 
-
-
 @media (min-width: 769px) {
 
     .s-suporte {
@@ -1239,7 +1280,7 @@
 
                 .text-conheca-sup {
 
-                    @include margin-right(12.5rem);
+                    @include margin(0 12.5rem 0 12.5rem);
 
                 }
 
@@ -1270,6 +1311,108 @@
     
         }
     
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .s-suporte {
+
+        .container-pg {
+
+            .main-top-suporte-div {
+
+                padding-bottom: 8rem;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .text-support {
+
+                    margin-bottom: 8.2rem;
+
+                }
+
+            }
+
+            .middle-main-suporte-div {
+
+                align-items: flex-start;
+
+                .text-conheca-sup {
+
+                    font-size: 2.8rem;
+
+                }
+
+
+                .images-cards-fan {
+
+                    @include margin-bottom(16rem);
+                    height: 22.8rem;
+                    max-width: 28rem;
+    
+                    .cel-mockup {
+    
+                        max-width: 60%;
+    
+                    }
+    
+                    .cupom-fiscal {
+
+                        max-width: 60%;
+                        bottom: -20px;
+    
+                    }
+    
+                    .cartao-credito {
+    
+                        max-width: 60%;
+                        bottom: -30px;
+
+                    }
+    
+    
+                }
+    
+            }
+
+        }
+
+    }
+
+}
+@media only screen and (min-width: 993px) {
+
+    .s-servicos {
+
+        .container-pg {
+
+            .servicos-list-with-links {
+
+                display: flex;
+                justify-content: space-between;
+
+                .text-projetamos {
+
+                    margin-right: 5.7rem;
+
+                    p {
+                        margin-top: 3rem;
+                        width: 22.8rem;
+                        color: var(--Dark-Blue);
+                        font-size: 1.6rem;
+                        line-height: 2.4rem;
+                    }
+    
+                }
+
+            }
+
+
+        }
+
     }
 
 }

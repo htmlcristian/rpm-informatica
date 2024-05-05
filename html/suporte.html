@@ -31,7 +31,7 @@
                     </div>
                     <div class="contact-item">
                         <img src="../imgs/icon-whatsapp-adress.svg" alt="">
-                        <a class="sm-contact text-sm" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832 </a>
+                        <a class="sm-contact text-sm" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832 </a>
                     </div>
                     <div class="contact-item">
                         <img src="../imgs/icon-message-white.svg" alt="">
@@ -74,22 +74,24 @@
                       PROMOÇÕES
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./promocoes.html#promocional-item1">HD SSD</a></li>
-                      <li><a class="dropdown-item" href="./promocoes.html#promocional-item1">HD SSD</a></li>
-                      <li><a class="dropdown-item" href="./promocoes.html#promocional-item1">HD SSD</a></li>
-                      <li><a class="dropdown-item" href="./promocoes.html#promocional-item1">HD SSD</a></li>
+                      <li><a class="dropdown-item" href="./html/promocoes.html">HD SSD</a></li>
+                      <li><a class="dropdown-item" href="./html/promocoes.html">HD SSD</a></li>
+                      <li><a class="dropdown-item" href="./html/promocoes.html">HD SSD</a></li>
+                      <li><a class="dropdown-item" href="./html/promocoes.html">HD SSD</a></li>
                     </ul>
                   </li>
   
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">CONTATO</a>
+                    <a class="nav-link" aria-current="page" href="javascript:void(0);" onclick="redirecionarParaFinal()">CONTATO</a>
                   </li>
   
                 </ul>
   
                 <div class="row endereco-btn-mobile mt-10">
                     <div class="col d-flex justify-content-center align-items-center">
-                      <button class="btn-primary">Conheça Nossa Loja</button>
+                      <a href="https://loja.rpminformatica.com" target="_blank" rel="noopener noreferrer">
+                        <button class="btn-primary">Conheça Nossa Loja</button>
+                      </a>
                     </div>
   
                   <div class="contact-section mobile1 d-lg-none mt-3">
@@ -100,7 +102,7 @@
                                 </div>
                                 <div class="col-6 contact-item d-flex justify-content-start align-items-center">
                                     <img src="../imgs/icon-whatsapp.svg" alt="">
-                                    <a class="sm-contact text-sm" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
+                                    <a class="sm-contact text-sm" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
                                 </div>
                             
                             <div class="row">
@@ -152,7 +154,7 @@
                     <div class="swiper tipos-suporte-slide">
                         <div class="tipos-suporte-pagination green-pagination"></div>
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide">
+                          <div id="suporte-simples" class="swiper-slide">
                             <h2>Suporte simples</h2>
                             <p>Realizamos o suporte de TI para empresas de todos os tamanhos. Veja alguns dos problemas de TI que podem acontecer e estamos prontos para ajudar a solucionar.</p>
                             <ul>
@@ -168,7 +170,7 @@
                                 <li>Solução para problemas em servidores de email</li>
                             </ul>
                           </div>
-                          <div class="swiper-slide">
+                          <div id="suporte-nuvem" class="swiper-slide">
                             <h2>em nuvem</h2>
                             <p>Suporte de TI especialista em soluções de problemas em rede cloud, backup em nuvem, servidor em nuvem e qualquer problema relacionado a esta expertise. Atendemos a cloud Públicas Aws e Google Cloud.</p>
                             <ul>
@@ -183,7 +185,7 @@
                                 <li>Solução para problemas em servidores em nuvem</li>
                             </ul>
                           </div>
-                          <div class="swiper-slide">
+                          <div id="suporte-servidores" class="swiper-slide">
                             <h2>para servidores</h2>
                             <p>Suporte de TI para atendimento especial em servidores, esteja em uma sala na sua empresa ou alocado em um datacenter. Realizamos todo tipo de solução para servidores, Dell, HP, IBM etc.</p>
                             <ul>
@@ -197,7 +199,7 @@
                                 <li>Instalação e configuração de sistema Linux</li>
                             </ul>
                           </div>
-                          <div class="swiper-slide">
+                          <div id="suporte-redes" class="swiper-slide">
                             <h2>para redes</h2>
                             <p>Suporte de TI para solução de problemas em rede de computadores. Solucionamos problemas em cabeamento, rede wifi, switches, roteadores, configurações e problemas de segurança da informação.</p>
                             <ul>
@@ -210,7 +212,7 @@
                                 <li>Verificação da integridade do cabeamento</li>
                             </ul>
                           </div>
-                          <div class="swiper-slide">
+                          <div id="suporte-sistemas" class="swiper-slide">
                             <h2>em sistemas</h2>
                             <p>Entender e desmitificar sistemas, soluções de ti para operação, controle e documentação de sistemas. Instalação, configuração e documentação de sistemas.</p>
                             <ul>
@@ -282,7 +284,7 @@
                 </div>
                 <div class="contact-item-footer">
                   <img src="../imgs/icon-whatsapp.svg" alt="">
-                  <a href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
+                  <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
                 </div>
                 <div class="contact-item-footer">
                   <img src="../imgs/icon-message-header-mobile.svg" alt="">
@@ -293,9 +295,15 @@
                   <a href="">Rua Santa Mariana n° 351 <br> Sala 201- Higienópolis RJ</a>
                 </div>
                 <div class="social-item-footer">
-                  <img src="../imgs/icon-facebook.svg" alt="">
-                  <img src="../imgs/icon-instagram.svg" alt="">
-                  <img src="../imgs/icon-youtube.svg" alt="">
+                  <a href="https://www.facebook.com/rpminf" target="_blank" rel="noopener noreferrer">
+                    <img src="../imgs/icon-facebook.svg" alt="Facebook">
+                  </a>
+                  <a href="https://www.instagram.com/rpminformatica_" target="_blank" rel="noopener noreferrer">
+                    <img src="../imgs/icon-instagram.svg" alt="Instagram">
+                  </a>
+                  <a href="https://www.youtube.com/@rpminformatica" target="_blank" rel="noopener noreferrer">
+                    <img src="../imgs/icon-youtube.svg" alt="YouTube">
+                  </a>
               </div>
               </div>
             </div>

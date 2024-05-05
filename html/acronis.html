@@ -31,7 +31,7 @@
                     </div>
                     <div class="contact-item">
                         <img src="../imgs/icon-whatsapp-adress.svg" alt="">
-                        <a class="sm-contact text-sm" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832 </a>
+                        <a class="sm-contact text-sm" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832 </a>
                     </div>
                     <div class="contact-item">
                         <img src="../imgs/icon-message-white.svg" alt="">
@@ -74,22 +74,24 @@
                       PROMOÇÕES
                     </a>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="./promocoes.html#promocional-item1">HD SSD</a></li>
-                      <li><a class="dropdown-item" href="./promocoes.html#promocional-item1">HD SSD</a></li>
-                      <li><a class="dropdown-item" href="./promocoes.html#promocional-item1">HD SSD</a></li>
-                      <li><a class="dropdown-item" href="./promocoes.html#promocional-item1">HD SSD</a></li>
+                      <li><a class="dropdown-item" href="./html/promocoes.html">HD SSD</a></li>
+                      <li><a class="dropdown-item" href="./html/promocoes.html">HD SSD</a></li>
+                      <li><a class="dropdown-item" href="./html/promocoes.html">HD SSD</a></li>
+                      <li><a class="dropdown-item" href="./html/promocoes.html">HD SSD</a></li>
                     </ul>
                   </li>
   
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">CONTATO</a>
+                    <a class="nav-link" aria-current="page" href="javascript:void(0);" onclick="redirecionarParaFinal()">CONTATO</a>
                   </li>
   
                 </ul>
   
                 <div class="row endereco-btn-mobile mt-10">
                     <div class="col d-flex justify-content-center align-items-center">
-                      <button class="btn-primary">Conheça Nossa Loja</button>
+                      <a href="https://loja.rpminformatica.com" target="_blank" rel="noopener noreferrer">
+                        <button class="btn-primary">Conheça Nossa Loja</button>
+                      </a>
                     </div>
   
                   <div class="contact-section mobile1 d-lg-none mt-3">
@@ -100,7 +102,7 @@
                                 </div>
                                 <div class="col-6 contact-item d-flex justify-content-start align-items-center">
                                     <img src="../imgs/icon-whatsapp.svg" alt="">
-                                    <a class="sm-contact text-sm" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
+                                    <a class="sm-contact text-sm" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
                                 </div>
                             
                             <div class="row">
@@ -128,7 +130,7 @@
 
                 <div class="text-hero-acronis">
                     <p>É uma empresa global de tecnologia que desenvolve software local e em nuvem para backup, recuperação de desastres, sincronização segura de arquivos e acesso compartilhamento e dados. Acronis possui 18 escritórios em todo o mundo. Os seus centros de pesquisa e desenvolvimento, Acronis Labs, estão sediados no Estados Unidos e em Cingapura. A Acronis possui data centers em nuvem internacionalmente, incluindo Estados Unidos, França, Cingapura, Japão e Alemanha.</p>
-                    <div class="imagem-dados-acronis d-flex justify-content-center">
+                    <div class="imagem-dados-acronis">
                         <img class="img-fluid" src="../imgs/acronis/img-acronis-hero.png" alt="">
                     </div>
                 </div>
@@ -314,11 +316,13 @@
       <div class="container-pg">
         <h2>CONFIÁVEL E SEGURO</h2>
         <p>Oferecemos a confiança e a tranquilidade de saber que você nunca se arriscará a perder dados valiosos.</p>
-        <button class="btn-secondary">Nos chame no whatsapp</button>
+        <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">
+          <button class="btn-secondary">Nos chame no whatsapp</button>
+        </a>
       </div>
     </section>
 
-    <footer>
+    <footer id="finalDaRolagem">
       <div class="container-pg">
         <div class="top-footer-div">
           <div class="formulario-rpm">
@@ -370,7 +374,7 @@
               </div>
               <div class="contact-item-footer">
                 <img src="../imgs/icon-whatsapp.svg" alt="">
-                <a href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send/?phone=%2B5521981858832&text&type=phone_number&app_absent=0">21 98185-8832</a>
               </div>
               <div class="contact-item-footer">
                 <img src="../imgs/icon-message-header-mobile.svg" alt="">
@@ -378,13 +382,19 @@
               </div>
               <div class="contact-item-footer">
                 <img src="../imgs/icon-location.svg" alt="">
-                <a href="">Rua Santa Mariana n° 351 <br> Sala 201- Higienópolis RJ</a>
+                <a target="_blank" href="https://maps.app.goo.gl/KhCTKZzfjbPYDEk58">Rua Santa Mariana n° 351 <br> Sala 201- Higienópolis RJ</a>
               </div>
               <div class="social-item-footer">
-                <img src="../imgs/icon-facebook.svg" alt="">
-                <img src="../imgs/icon-instagram.svg" alt="">
-                <img src="../imgs/icon-youtube.svg" alt="">
-            </div>
+                <a href="https://www.facebook.com/rpminf" target="_blank" rel="noopener noreferrer">
+                  <img src="../imgs/icon-facebook.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/rpminformatica_" target="_blank" rel="noopener noreferrer">
+                  <img src="../imgs/icon-instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://www.youtube.com/@rpminformatica" target="_blank" rel="noopener noreferrer">
+                  <img src="../imgs/icon-youtube.svg" alt="YouTube">
+                </a>
+              </div>
             </div>
           </div>
 
@@ -411,6 +421,7 @@
         </div>
     </div>
     </footer>
+
 
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

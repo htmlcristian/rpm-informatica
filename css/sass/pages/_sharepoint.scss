@@ -1,7 +1,7 @@
 .s-hero-sharepoint {
 
     @include padding(20rem 0 20rem 0);
-    background-image: url('../../../imgs/sharepoint/bg-s-hero-sharepoint.png');
+    background-image: url('../imgs/sharepoint/bg-s-hero-sharepoint.png');
     background-color: var(--Dark-Blue);
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -39,9 +39,9 @@
 .s-oque-sharepoint {
 
     @include padding(8rem 0 24rem 0);
-    background-image: url('../../../imgs/sharepoint/bg-oque-sharepoint.png');
+    background-image: url('../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-size: 99%;
     background-color: var(--Blue-Light);
 
     .container-pg {
@@ -413,7 +413,7 @@
 
     .s-oque-sharepoint {
 
-        background-image: url('../../../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
+        background-image: url('../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -461,7 +461,7 @@
 
     .s-oque-sharepoint {
 
-        background-image: url('../../../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
+        background-image: url('../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -542,7 +542,7 @@
 
     .s-oque-sharepoint {
 
-        background-image: url('../../../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
+        background-image: url('../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -620,7 +620,7 @@
 
     .s-oque-sharepoint {
 
-        background-image: url('../../../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
+        background-image: url('../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -716,6 +716,12 @@
     }
 
     .s-oque-sharepoint {
+
+        background-image: url('../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png'), url('../imgs/sharepoint/thoughtful-man-laptop-office.png');
+        background-position: top center, 0px 782px;
+        background-size: cover, 768px;
+        background-repeat: no-repeat;
+        background-color: var(--Blue-Light);
 
         .container-pg {
 
@@ -922,12 +928,11 @@
 }
 
 
-
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
 
     .s-oque-sharepoint {
 
-        background-image: url('../../../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
+        background-image: url('../imgs/sharepoint/bg-oque-sharepoint-v2-mobile.png');
         background-repeat: no-repeat;
         background-size: cover;
 

@@ -1,3 +1,13 @@
+
+.sticky-lg-top {
+
+  position: -webkit-sticky;
+  position: sticky !important;
+  top: 125px;
+  z-index: 1020;
+
+}
+
 .navbar-toggler {
 
     border: 0;
@@ -15,7 +25,7 @@
     transition: all 0.35s ease-out;
     transform-origin: center left;
 
-  }
+}
   .top-bar,
   .bottom-bar {
       background-color: var(--Dark-Blue);
@@ -69,19 +79,30 @@
 
   .down-arrow {
     position: absolute;
-    top: calc(100vh - 45px);
+    top: calc(736px - 45px);
     left: calc(50% - 21px);
     animation: jumpInfinite 1.5s infinite;
   }
 
-  @media (min-width: 490px) and (max-width: 1199px) {
+  @media only screen and (min-width: 993px) and (max-width: 1099px) {
 
     .down-arrow {
       position: absolute;
-      top: 100vh;
+      top: 910px;
       left: calc(50% - 14px);
       animation: jumpInfinite 1.5s infinite;
   }
+
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1200px) {
+
+  .down-arrow {
+    position: absolute;
+    top: 1000px;
+    left: calc(50% - 14px);
+    animation: jumpInfinite 1.5s infinite;
+}
 
 }
 

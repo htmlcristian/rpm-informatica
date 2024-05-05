@@ -8,10 +8,11 @@ header {
 
         align-items: center;
         justify-content: center;
+        padding: 0.8rem 0 0.8rem;
+        transition: padding 0.3s ease;
 
         .contact-item {
             margin-right: 2.3rem;
-            padding: 0.8rem 0 0.8rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -23,6 +24,7 @@ header {
                 font-size: 1.4rem;
                 line-height: 2.4rem;
                 text-decoration: none;
+                cursor: pointer;
             }
 
             img {
@@ -67,6 +69,12 @@ header {
                 @include rfs(140%, line-height);
                 text-transform: uppercase;
                 box-shadow: 0rem 0rem 2.4rem -0.8rem rgba(49, 80, 126, 0.24);
+
+                .dropdown-item {
+
+                    @include padding(0.8rem);
+
+                }
 
             }
 
@@ -124,7 +132,7 @@ header {
                 .navbar-nav {
 
                     margin: 0 auto;
-                    gap: 0;
+                    gap: 1.5rem;
     
                 }
 
@@ -143,14 +151,13 @@ header {
                     content: '';
                     display: block;
                     border-bottom: 1px solid #EAF0F5;
-                    margin: 16px 0 16px;
+                    margin-bottom: 1.6rem;
 
                 }
 
                 .navbar-nav .dropdown-menu.show {
 
                     width: 12rem;
-                    box-shadow: none;
     
                 }
 
@@ -175,14 +182,14 @@ header {
 
                 .navbar-collapse.collapse.show, .navbar-collapse.collapsing {
 
-                    margin-top: 4rem;
+                    margin-top: 3rem;
 
                 }
 
                 .navbar-nav {
 
                     margin: 0 auto;
-                    gap: 0;
+                    gap: 1.5rem;
     
                 }
 
@@ -201,14 +208,13 @@ header {
                     content: '';
                     display: block;
                     border-bottom: 1px solid #EAF0F5;
-                    margin: 16px 0 16px;
+                    margin-bottom: 1.6rem;
 
                 }
 
                 .navbar-nav .dropdown-menu.show {
 
                     width: 12rem;
-                    box-shadow: none;
     
                 }
         
@@ -257,7 +263,6 @@ header {
                 .navbar-nav .dropdown-menu.show {
 
                     width: 12rem;
-                    box-shadow: none;
     
                 }
         

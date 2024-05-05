@@ -1,6 +1,6 @@
 .s-hero-fortinet {
 
-    background-image: url('../../../imgs/fortinet/bg-s-hero-fortinet.png');
+    background-image: url('../imgs/fortinet/bg-s-hero-fortinet.png');
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center right;
@@ -34,7 +34,7 @@
 .s-revendedores-fortinet {
 
     @include padding(8rem 0 14.3rem);
-    background-image: url('../../../imgs/fortinet/bg-fortniet-section.png');
+    background-image: url('../imgs/fortinet/bg-fortniet-section.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:  top center;
@@ -187,7 +187,7 @@
                             p {
 
                                 color: var(--Dark-Blue);
-                                @include font-size(0.8rem);
+                                @include font-size(1rem);
                                 @include rfs(120%, line-height);
                                 @include margin(0.8rem 0 3.7rem);
 

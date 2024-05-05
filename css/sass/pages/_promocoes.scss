@@ -1,7 +1,7 @@
 .s-hero-promocoes {
 
     background-color: var(--Dark-Blue);
-    background-image: url('../../../imgs/promocoes/bg-s-hero-promocoes.png');
+    background-image: url('../imgs/promocoes/bg-s-hero-promocoes.png');
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -48,7 +48,7 @@
 
     @include padding(8rem 0 11.1rem);
     background: var(--Blue-Light);
-    background-image: url('../../../imgs/promocoes/bg-mais-vendidos.png');
+    background-image: url('../imgs/promocoes/bg-mais-vendidos.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
@@ -315,7 +315,6 @@
     }
 
 }
-
 
 @media only screen and (min-width: 0px) and (max-width: 429px) {
 
@@ -764,11 +763,12 @@
 
             .title-main-compre-conosco {
 
-                max-width: 66.4rem;
+                max-width: 75.4rem;
 
                 h3 {
 
-                    max-width: 59.2rem;
+                    max-width: 60rem;
+                    font-size: 1.9rem;
 
                 }
 
@@ -801,11 +801,12 @@
                             @include margin-top(1.2rem);
                             display: flex;
                             align-items: center;
+                            margin-bottom: 0.8rem;
+
     
                             h4 {
     
                                 text-align: center;
-                                margin: 0 0.8rem 0;
     
                             }
     

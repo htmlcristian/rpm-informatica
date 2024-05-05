@@ -50,3 +50,31 @@
 	}
 
 }
+
+@keyframes animeRight {
+	0% {
+		transform: translateX(-50%) rotate(0);
+	}
+
+	30% {
+		transform: translateX(-10%) rotate(12deg);
+	}
+
+	70% {
+		transform: translateX(-50%) rotate(0);
+	}
+}
+
+@keyframes animeLeft {
+	0% {
+		transform: translateX(-50%) rotate(0);
+	}
+
+	30% {
+		transform: translateX(-80%) rotate(-12deg);
+	}
+
+	70% {
+		transform: translateX(-50%) rotate(0);
+	}
+}

@@ -1,10 +1,9 @@
 .s-hero-quem-somos {
 
-    background-image: url('../../../imgs/quem_somos/bg-quem-somos.png');
+    background-image: url('../imgs/quem_somos/bg-quem-somos.png');
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    max-height: 73.6rem;
     @include padding-bottom(34.8rem);
 
     .container-pg {
@@ -17,7 +16,7 @@
             @include rfs(-0.28rem, letter-spacing);
             text-align: center;
             color: var(--White);
-            font-family: "Rubik Mono One";
+            font-family: "Rubik Mono One", sans-serif;
 
         }
 
@@ -122,8 +121,8 @@
                     p {
 
                         color: var(--Dark-Blue);
-                        font-size: 18px;
-                        line-height: 140%; /* 25.2px */
+                        @include font-size(1.8rem);
+                        @include rfs(140%, line-height);
 
                     }
 
@@ -140,16 +139,13 @@
             .swiper.list-estrutura {
 
                 .swiper-wrapper {
-    
-                    // display: flex;
-                    // gap: 3rem;
         
                     .swiper-slide {
         
                         @include padding(2.4rem);
                         @include rfs(1.6rem, gap);
                         @include rfs(0.4rem, border-radius);
-                        min-height: 47rem;
+                        min-height: 50rem;
                         max-width: 35rem;
                         display: flex;
                         flex-direction: column;
@@ -160,7 +156,7 @@
                         h3 {
 
                             color: var(--Blue-Primary);
-                            font-family: "Rubik Mono One";
+                            font-family: "Rubik Mono One", sans-serif;
                             @include font-size(2.4rem);
                             @include rfs(120%, line-height);
                             @include rfs(-0.024rem, letter-spacing);
@@ -254,7 +250,8 @@
     }
 }
 
-@media (max-width: 768px) {
+
+@media only screen and (min-width: 320px) and (max-width: 429px) {
 
     .s-hero-quem-somos {
 
@@ -323,13 +320,21 @@
     
                     }   
 
+                    .text-capacitacao {
+
+                        top: 16rem;
+    
+                    }
+
                 }
+
+
             }
 
 
             .estrutura-negocio {
 
-                margin-top: 29.5rem;
+                margin-top: 19.5rem;
 
                 h2 {
 
@@ -340,13 +345,10 @@
                 .swiper.list-estrutura {
 
                     .swiper-wrapper {
-        
-                        // display: flex;
-                        // gap: 3rem;
             
                         .swiper-slide {
-                            
-                            min-height: 49.7rem;
+                
+                            min-height: 42.7rem;
             
                         }
             
@@ -356,6 +358,384 @@
 
             }
         }
+
+    }
+
+
+}
+@media only screen and (min-width: 430px) and (max-width: 576px) {
+    .s-hero-quem-somos {
+
+        max-height: 79.1rem;
+        padding-top: 58.8rem;
+        padding-bottom: 14.6rem;
+
+        .container-pg {
+
+            h1 {
+
+                @include padding-top(7.5rem);
+
+            }
+
+            .down-arrow {
+
+                display: none;
+
+            }
+
+        }
+
+    }
+
+    .s-solucoes-quem-somos {
+
+        .container-pg {
+
+            h2 {
+
+                font-size: 2.2rem;
+                text-align: center;
+
+            }
+
+            .total-div-solucoes {
+
+                display: block;
+
+                .text-left-solucoes {
+
+                    @include margin(0 auto 3.2rem auto);
+
+                    h4 {
+
+                        text-align: center;
+                        font-size: 13px;
+
+                    }
+
+                    span {
+
+                        text-align: center;
+                        font-size: 14px;
+
+                    }
+
+                }
+
+            }
+
+
+            .capacitacao-quem-somos {
+
+                .box-text-image-solucoes {
+
+                    img {
+
+                        left: 0;
+                        position: relative;
+    
+                    }   
+
+                    .text-capacitacao {
+
+                        top: 16rem;
+    
+                    }
+
+                }
+
+
+            }
+
+
+            .estrutura-negocio {
+
+                margin-top: 13.5rem;
+
+                h2 {
+
+                    @include margin-bottom(2.4rem);
+
+                }
+
+                .swiper.list-estrutura {
+
+                    .swiper-wrapper {
+            
+                        .swiper-slide {
+                
+                            min-height: 42.7rem;
+            
+                        }
+            
+                    }
+        
+                }
+
+            }
+        }
+
+    }
+}
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+
+    .s-hero-quem-somos {
+
+        max-height: 79.1rem;
+        padding-top: 58.8rem;
+        padding-bottom: 14.6rem;
+
+        .container-pg {
+
+            h1 {
+
+                padding-top: 4.5rem;
+
+            }
+
+            .down-arrow {
+
+                display: none;
+
+            }
+
+        }
+
+    }
+
+    .s-solucoes-quem-somos {
+
+        .container-pg {
+
+            h2 {
+
+                font-size: 2.2rem;
+                text-align: center;
+
+            }
+
+            .total-div-solucoes {
+
+                display: block;
+
+                .text-left-solucoes {
+
+                    margin: 0 auto 3.2rem auto;
+                    width: 50%;
+
+                    h4 {
+
+                        text-align: center;
+                        font-size: 13px;
+
+                    }
+
+                    span {
+
+                        text-align: center;
+                        font-size: 14px;
+
+                    }
+
+                }
+
+                .text-right-solucoes {
+
+                    margin: 0 auto;
+
+                }
+
+            }
+
+
+            .capacitacao-quem-somos {
+
+                .box-text-image-solucoes {
+
+                    img {
+
+                        left: 0;
+                        position: relative;
+    
+                    }   
+
+                    .text-capacitacao {
+
+                        top: 16rem;
+    
+                    }
+
+                }
+
+
+            }
+
+
+            .estrutura-negocio {
+
+                margin-top: 13.5rem;
+
+                h2 {
+
+                    @include margin-bottom(2.4rem);
+
+                }
+
+                .swiper.list-estrutura {
+
+                    .swiper-wrapper {
+            
+                        .swiper-slide {
+                
+                            min-height: 50.7rem;
+            
+                        }
+            
+                    }
+        
+                }
+
+            }
+        }
+
+    }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    .s-hero-quem-somos {
+
+        max-height: 79.1rem;
+        padding-top: 58.8rem;
+        padding-bottom: 14.6rem;
+
+        .container-pg {
+
+            h1 {
+
+                padding-top: 4.5rem;
+
+            }
+
+            .down-arrow {
+
+                display: none;
+
+            }
+
+        }
+
+    }
+
+    .s-solucoes-quem-somos {
+
+        .container-pg {
+
+            h2 {
+
+                font-size: 2.2rem;
+                text-align: center;
+
+            }
+
+            .total-div-solucoes {
+
+                display: block;
+
+                .text-left-solucoes {
+
+                    margin: 0 auto 3.2rem auto;
+                    width: 50%;
+
+                    h4 {
+
+                        text-align: center;
+                        font-size: 13px;
+
+                    }
+
+                    span {
+
+                        text-align: center;
+                        font-size: 14px;
+
+                    }
+
+                }
+
+                .text-right-solucoes {
+
+                    margin: 0 auto;
+
+                }
+
+            }
+
+
+            .capacitacao-quem-somos {
+
+                .box-text-image-solucoes {
+
+                    img {
+
+                        left: 0;
+                        position: relative;
+    
+                    }   
+
+                    .text-capacitacao {
+
+                        top: 16rem;
+    
+                    }
+
+                }
+
+
+            }
+
+
+            .estrutura-negocio {
+
+                margin-top: 13.5rem;
+
+                h2 {
+
+                    @include margin-bottom(2.4rem);
+
+                }
+
+                .swiper.list-estrutura {
+
+                    .swiper-wrapper {
+            
+                        .swiper-slide {
+                
+                            min-height: 52.7rem;
+            
+                        }
+            
+                    }
+        
+                }
+
+            }
+        }
+
+    }
+
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+
+    .s-solucoes-quem-somos
+    .container-pg 
+    .estrutura-negocio 
+    .swiper.list-estrutura 
+    .swiper-wrapper 
+    .swiper-slide {
+        
+        min-height: 60rem;
 
     }
 

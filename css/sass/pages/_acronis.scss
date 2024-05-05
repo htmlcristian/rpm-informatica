@@ -1,6 +1,7 @@
 .s-hero-acronis {
 
-    background-image: url('../../../imgs/acronis/bg-s-hero-acronis.png');
+    background-image: url('../imgs/acronis/bg-s-hero-acronis.png');
+    background-color: var(--Dark-Blue-Secundary);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -63,7 +64,7 @@
 
 .s-topicos-acronis {
 
-    background: url('../../../imgs/acronis/bg-list-top-acronis.png') no-repeat top center/cover var(--Blue-Light);
+    background: url('../imgs/acronis/bg-list-top-acronis.png') no-repeat top center/cover var(--Blue-Light);
     @include padding(8rem 0 7.8rem 0);
 
     .container-pg {
@@ -152,7 +153,8 @@
 
     max-height: 180rem;
     @include padding(8rem 0 10rem 0);
-    background: url('../../../imgs/acronis/bg-vantagens-acronis.png') no-repeat top right/contain var(--Dark-Blue-Secundary);
+    background: url('../imgs/acronis/bg-vantagens-acronis.png') no-repeat top right/contain var(--Dark-Blue-Secundary);
+    position: relative;
 
     .container-pg {
 
@@ -344,14 +346,6 @@
                     @include rfs(2.4rem, line-height);
 
                 }
-                
-                .sticky-lg-top {
-
-                    position: sticky;
-                    top: 125px;
-                    z-index: 1020;
-                    
-                }
 
             }
 
@@ -376,7 +370,7 @@
 .s-confianca-acronis {
 
     @include padding(8rem 0 8rem 0);
-    background: url('../../../imgs/acronis/bg-vantagens-acronis.png') no-repeat right center/cover var(--Dark-Blue-Secundary);
+    background: url('../imgs/acronis/bg-vantagens-acronis.png') no-repeat right center/cover var(--Dark-Blue-Secundary);
 
     .container-pg {
 
@@ -942,20 +936,32 @@
 }
 
 @media only screen and (min-width: 993px) {
+    
     .s-hero-acronis {
     
          .container-pg {
     
             .global-hero-acronis {
 
-                 .text-hero-acronis {
+                .text-hero-acronis {
 
                     gap: 3rem;
                     display: flex;
-                    justify-content: space-between;
+                    justify-content: flex-start;
+
+                    .imagem-dados-acronis {
+
+                        img {
+
+                            max-width: 75%;
+                            margin: 0 0 0 auto;
 
 
-                 }
+                        }
+
+                    }
+
+                }
     
              }
     
@@ -1011,25 +1017,7 @@
                 display: flex;
                 justify-content: space-between;
 
-                // .title-text-vantagens-acronis {
-
-                //     // h2 {
-
-                //     //     top: 150px;
-                //     //     position: sticky;
-
-                //     // }
-
-                //     // p {
-
-                //     //     top: 250px;
-                //     //     position: sticky;
-
-                //     // }
-
-                //  }
-
-                 .swiper.vantagens-acr {
+                .swiper.vantagens-acr {
 
                     // max-height: 160rem;
                     margin: 0;
@@ -1135,4 +1123,13 @@
         }
     
     }
+}
+
+@media only screen and (min-width: 1200px) {
+
+
+    .s-hero-acronis .container-pg .global-hero-acronis {
+        padding: 20.7rem 0 11.2rem 0;
+    }
+
 }

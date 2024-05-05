@@ -1,8 +1,8 @@
 .s-hero-suporte-ti {
 
     background-color: var(--Dark-Blue);
-    background-image: url('../../../imgs/suporte/bg-s-hero-suporte.png');
-    background-size: contain;
+    background-image: url('../imgs/suporte/bg-s-hero-suporte.png');
+    background-size: cover;
     background-position: right center;
     background-repeat: no-repeat;
     @include padding(20rem 0 15.2rem 0);
@@ -34,11 +34,6 @@
 
 .s-oque-suporte {
 
-    background-color: var(--Blue-Light);
-    background-image: url('../../../imgs/suporte/bg-s-oque-suporte.png');
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: contain;
     @include padding(8rem 0 9.4rem 0);
 
     .container-pg {
@@ -215,6 +210,12 @@
 
     .s-oque-suporte {
     
+        background-color: var(--Blue-Light);
+        background-image: url('../imgs/suporte/bg-s-oque-suporte.png');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
         .container-pg {
     
             .total-div-suporte {
@@ -237,7 +238,7 @@
     
                             .swiper-slide {
     
-                                min-height: 67.5rem;
+                                min-height: 69.5rem;
 
                             }
     
@@ -285,6 +286,12 @@
 
     .s-oque-suporte {
     
+        background-color: var(--Blue-Light);
+        background-image: url('../imgs/suporte/bg-s-oque-suporte.png');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
         .container-pg {
     
             .total-div-suporte {
@@ -366,6 +373,12 @@
 
     .s-oque-suporte {
 
+        background-color: var(--Blue-Light);
+        background-image: url('../imgs/suporte/bg-s-oque-suporte.png');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+
         .container-pg {
     
             .total-div-suporte {
@@ -418,6 +431,8 @@
 @media only screen and (min-width: 993px) {
 
     .s-hero-suporte-ti {
+
+        background-size: contain;
     
         .container-pg {
     
@@ -439,6 +454,12 @@
     }
 
     .s-oque-suporte {
+
+        background-color: var(--Blue-Light);
+        background-image: url('../imgs/suporte/bg-s-oque-suporte.png'), url('../imgs/suporte/man-s-hands-typing-laptop-keyboard.png');
+        background-position: top center, 0px 622px;
+        background-repeat: no-repeat;
+        background-size: contain, 733px;
 
         .container-pg {
     
@@ -469,6 +490,8 @@
 
                 display: flex;
                 justify-content: space-between;
+                position: relative;
+
 
                 .title-tipo-suporte {
                     
@@ -510,7 +533,7 @@
             }
     
         }
-    
+
     }
 
 }

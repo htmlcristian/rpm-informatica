@@ -1,33 +1,42 @@
 let infos = document.querySelector(".minimizar")
+let elementoAposHeader = document.querySelector(".desktop-contact")
 
 const handleScroll = () => {
     let positionY = window.pageYOffset
     if(positionY > 0) {
         infos.classList.remove('scrolled-up')
         infos.classList.add('scrolled-down')
+        infos.style.transform = "scale(0)";
+        elementoAposHeader.style.padding = "0px";
+
     } else {
         infos.classList.remove('scrolled-down')
         infos.classList.add('scrolled-up')
+        infos.style.transform = "scale(1)";
+        elementoAposHeader.style.padding = "0.8rem 0 0.8rem";
     }
 }
 
 document.addEventListener('scroll', handleScroll);
 
+function redirecionarParaFinal() {
+  window.scrollTo(0,document.body.scrollHeight);
+}
+
 var swiperEstruturaNegocios = new Swiper(".list-estrutura", {
-    slidesPerView: 1.5,
+    slidesPerView: 1,
     spaceBetween: 30,
     pagination: {
       el: ".swiper-pagination-estrutura-negocios",
       clickable: true,
     },
-    // Breakpoint options to disable Swiper on desktop
     breakpoints: {
       320: {
-        slidesPerView: 1.5,
+        slidesPerView: 1,
         spaceBetween: 20,
       },
       768: {
-        slidesPerView: 3,
+        slidesPerView: 2.2,
         spaceBetween: 20,
       },
       1024: {
@@ -178,6 +187,10 @@ var swiperFortinet = new Swiper(".fortinet-carousel", {
   pagination: {
     el: ".pagination-carousel-fortinet",
     clickable: true,
+  },
+  autoplay: {
+    delay: 2500, 
+    disableOnInteraction: false,
   },
   breakpoints: {
     320: {
