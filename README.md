@@ -1,5 +1,9 @@
 # RPM - Informática
 
+## AVISO IMPORTANTE
+
+Note que talvez seja necessário fazer o download do projeto para visualiza-lo completamente e suas 11 páginas, incluindo as funcionalidades do bootstrap, visto que há algum conflito nã suportado pelo github pages.
+
 ## Sobre o Projeto
 
 O projeto foi desenvolvido para a empresa RPM - Informática. Ele reflete meu primeiro freelance na área de desenvolvimento web. Foi utilizado as seguintes tecnologias modernas como **HTML**, **Bootstrap**, **jQuery**, **CSS**, a biblioteca **RFS** para responsividade, e o **JS Swipper Slide** para slides responsivos.
